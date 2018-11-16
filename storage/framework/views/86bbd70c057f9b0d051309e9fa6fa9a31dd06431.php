@@ -12,10 +12,12 @@
                 <br><br><h3 style="color: white">REGISTRAR CLIENTE</h3>
             </div>
 
-            <form class="form-horizontal" method="POST" action="">
+            <form class="form-horizontal" method="POST" action="<?php echo e(url('/recep/register')); ?>" enctype="multipart/form-data">
+                <?php echo e(csrf_field()); ?>
+
                 <div class="form-group<?php echo e($errors->has('DNI') ? ' has-error' : ''); ?>">
                     <center><div class="col-md-4">
-                            <input id="DNI" type="text" class="form-control" name="DNI" placeholder="DNI" style="text-align: center; background-color: transparent; color: white" value="<?php echo e($id); ?>" maxlength="8" required autofocus>
+                            <input id="DNI" type="text" class="form-control" name="dni" placeholder="DNI" style="text-align: center; background-color: transparent; color: white" value="<?php echo e($id); ?>" maxlength="8" required autofocus>
                             <?php if($errors->has('DNI')): ?>
                                 <span class="help-block">
                                                     <strong><?php echo e($errors->first('DNI')); ?></strong>

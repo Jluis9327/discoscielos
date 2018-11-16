@@ -37,8 +37,8 @@ Route::middleware(['auth','recep'])->group(function () {
     Route::post('/recep/modify','RecepController@modify');
     Route::get('/recep/zone/{id}','RecepController@zone')->name('recep.zone');
     //Route::post('/recep/zone','RecepController@zone');
-    Route::get('/recep/firstlevel/{dni}','RecepController@first');
-    Route::get('/recep/secondlevel/{dni}','RecepController@secondindex');
+    Route::get('/recep/zone/firstlevel/{dni}/day/{date}','RecepController@first');
+    Route::get('/recep/zone/secondlevel/{dni}/day/{date}','RecepController@secondday');
 
 });
 Route::middleware(['auth','client'])->group(function () {

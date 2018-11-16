@@ -20,7 +20,7 @@
                             <td>Ingresar DNI</td>
                             <td></td><td></td><td></td><td></td>
                             <td><input id="dni" type="text" class="form-control" name="dni" placeholder="DNI" style="text-align: center; background-color: transparent; color: white" autocomplete="off" maxlength="8" value="<?php echo e($dni); ?>" onkeypress="return validaNumericos(event)" ></td>
-                            <td><input name="btn_buscar" type="submit" class="btn btn-outline-success" value="BUSCAR" ></td>
+                            <td><input name="btn_buscar" type="submit" class="btn btn-outline-success" value="BUSCAR"></td>
                         </tr>
                     </table>
                 </center>
@@ -42,10 +42,10 @@
                                     <td><input id="ape<?php echo e($dato[$i]->id); ?>" type="text" class="form-control" name="ape<?php echo e($dato[$i]->id); ?>" placeholder="Apellido" style="text-align: center; background-color: transparent; color: white" value="<?php echo e($dato[$i]->surname); ?>"  disabled></td>
                                     <td><input id="dni<?php echo e($dato[$i]->id); ?>" type="text" class="form-control" name="dni<?php echo e($dato[$i]->id); ?>" placeholder="DNI" style="text-align: center; background-color: transparent; color: white" value="<?php echo e($dato[$i]->DNI); ?>"  disabled></td>
                                     <td><input id="phone<?php echo e($dato[$i]->id); ?>" type="text" class="form-control" name="phone<?php echo e($dato[$i]->id); ?>" placeholder="Telefono" style="text-align: center; background-color: transparent; color: white" value="<?php echo e($dato[$i]->phone); ?>"  disabled></td>
-                                    <td><input id="email<?php echo e($dato[$i]->id); ?>" type="email" class="form-control" name="email<?php echo e($dato[$i]->id); ?>" placeholder="Correo" style="text-align: center; background-color: transparent; color: white" value="<?php echo e($dato[$i]->email); ?>" disabled></td>
-                                    <td><input id="modificar<?php echo e($dato[$i]->id); ?>" type="button" class="btn btn-success" value="Modificar" onclick="deshabilitar(<?php echo $dato[$i]->id;?>)" ></td>
+                                    <td><input id="email<?php echo e($dato[$i]->id); ?>" type="text" class="form-control" name="email<?php echo e($dato[$i]->id); ?>" placeholder="Correo" style="text-align: center; background-color: transparent; color: white" value="<?php echo e($dato[$i]->email); ?>" disabled></td>
+                                    <td><input id="modificar<?php echo e($dato[$i]->id); ?>" type="button" class="btn btn-success" value="Modificar" onclick="deshabilitarcliente(<?php echo $dato[$i]->id;?>)" ></td>
                                     <td><button id="guardar<?php echo e($dato[$i]->id); ?>" type="submit" class="btn btn-success" name="guardar<?php echo e($dato[$i]->id); ?>"  >Guardar</button></td>
-                                    <td><a href="<?php echo e(url('/recep/zone/'.$dato[$i]->id)); ?>" ><button id="reservar<?php echo e($dato[$i]->id); ?>" type="button" class="btn btn-success" name="reservar<?php echo e($dato[$i]->id); ?>"  >Reservar</button></a></td>
+                                    <td><a href="<?php echo e(url('/recep/zone/'.$dato[$i]->DNI)); ?>" ><button id="reservar<?php echo e($dato[$i]->DNI); ?>" type="button" class="btn btn-success" name="reservar<?php echo e($dato[$i]->DNI); ?>"  >Reservar</button></a></td>
                                 </form>
                             <?php endfor; ?>
                 </tr>
@@ -62,10 +62,10 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <h3>Cliente no Registrado, Desea registrarlo?</h3>
-                            <p>Error</p>
+                            <p>x</p>
                         </div>
                         <div class="modal-footer">
-                            <button class="btn btn-success" type='button' value="Si"><a  href="<?php echo e(url('/recep/register/'.$dni)); ?>"> Si</a></button>
+                            <a  href="<?php echo e(url('/recep/register/'.$dni)); ?>"><input type="submit" value="Si" class="btn btn-success" ></a>
                             <button class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
                         </div>
                     </div>

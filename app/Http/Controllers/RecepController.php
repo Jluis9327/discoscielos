@@ -15,7 +15,9 @@ class RecepController extends Controller
     }
     public function zone($dni)
     {
-        return view('recepcionist.zone')->with(compact('dni'));
+        $presentation=Presentation::orderBy('Date','desc')->limit(3)->get();
+        $date=$presentation[2]->Date;
+        return view('recepcionist.zone')->with(compact('dni','presentation','date'));
     }
     public function search(Request $request)
     {
@@ -79,14 +81,12 @@ class RecepController extends Controller
         $dni=$request->dni;
         return view('recepcionist.first')->with(compact('dni'));
     }
-    public function secondindex($dni){
-        $presentation=Presentation::
-        return view('recepcionist.second')->with(compact('dni'));
-    }
-    public function second(Request $request)
+    //-------------------------------------------POST----------------------------------------------------
+    public function secondday($dni,$date)
     {
         $box=Box::where('Id_Est','Activo')->get();
-        $dni=$request->dni;
-        return view('recepcionist.second')->with(compact('dni','box'));
+        $presentation=Presentation::orderBy('Date','desc')->limit(3)->get();
+//        return view('recepcionist.second')->with(compact('dni','box'));
+        return view('recepcionist.second')->with(compact('dni','box','presentation'));
     }
 }

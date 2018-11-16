@@ -1,5 +1,4 @@
-@extends('layouts.app')
-@section('content')
+<?php $__env->startSection('content'); ?>
     <section id="testimonials" class="section-bg wow ">
         <div class="container">
             <br><br><br>
@@ -10,9 +9,9 @@
                 <label for="días" class="col-form-label" aria-disabled="true">Seleccione el día</label><br>
                 <select id="xs" onchange="javascript:handleSelect(this)">
                     <option>Escoge una fecha</option>
-            @for ($i = 2; $i>=0 ; $i--)
-                        <option value="{{url('/recep/zone/secondlevel/'.$dni.'/day/'.$presentation[$i]->Date)}}">{{ $presentation[$i]->Date}}</option>
-            @endfor
+            <?php for($i = 2; $i>=0 ; $i--): ?>
+                        <option value="<?php echo e(url('/recep/zone/secondlevel/'.$dni.'/day/'.$presentation[$i]->Date)); ?>"><?php echo e($presentation[$i]->Date); ?></option>
+            <?php endfor; ?>
                 </select>
             </div>
             <center>
@@ -98,7 +97,7 @@
                 </div>
             </div>
 
-            <center><a href="{{url('/recep/zone/'.$dni)}}"><i class="ion-ios-undo-outline" style="font-size: 350%"></i></a>
+            <center><a href="<?php echo e(url('/recep/zone/'.$dni)); ?>"><i class="ion-ios-undo-outline" style="font-size: 350%"></i></a>
                 <h6 style="color: white; font-family: 'Arial Black'">MENU PRINCIPAL</h6></center>
 
             <div class="facts-img"></div>
@@ -110,4 +109,6 @@
             window.location = elm.value;
         }
     </script>
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
