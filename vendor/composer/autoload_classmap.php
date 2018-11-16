@@ -50,6 +50,7 @@ return array(
     'AssertionError' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/AssertionError.php',
     'BannerTableSeeder' => $baseDir . '/database/seeds/BannerTableSeeder.php',
     'BoxTableSeeder' => $baseDir . '/database/seeds/BoxTableSeeder.php',
+    'Box_PresentationTableSeeder' => $baseDir . '/database/seeds/Box_PresentationTableSeeder.php',
     'Carbon\\Carbon' => $vendorDir . '/nesbot/carbon/src/Carbon/Carbon.php',
     'Carbon\\CarbonInterval' => $vendorDir . '/nesbot/carbon/src/Carbon/CarbonInterval.php',
     'Carbon\\CarbonPeriod' => $vendorDir . '/nesbot/carbon/src/Carbon/CarbonPeriod.php',

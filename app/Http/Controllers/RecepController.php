@@ -6,6 +6,8 @@ use App\Box;
 use App\Presentation;
 use App\User;
 use Illuminate\Http\Request;
+use App\Box_Presentation;
+
 
 class RecepController extends Controller
 {
@@ -17,7 +19,8 @@ class RecepController extends Controller
     {
         $presentation=Presentation::orderBy('Date','desc')->limit(3)->get();
         $date=$presentation[2]->Date;
-        return view('recepcionist.zone')->with(compact('dni','presentation','date'));
+        $boxes=Box_Presentation::where('Id_Pre',$presentation[2]->Id_Pre)->get();
+        return view('recepcionist.zone')->with(compact('dni','presentation','date','boxes'));
     }
     public function search(Request $request)
     {
@@ -34,6 +37,7 @@ class RecepController extends Controller
     }
     public function modify(Request $request)
     {
+        $dni=null;
         $x=$request->iduser;
         $user=User::find($request->iduser);
         //dd($request["name$x"]);
@@ -42,7 +46,7 @@ class RecepController extends Controller
         $user->DNI=$request["dni$x"];
         $user->phone=$request["phone$x"];
         $user->save();
-        return view('recepcionist.search');
+        return view('recepcionist.search')->with(compact('dni'));
     }
     public function registerindex($id)
     {
@@ -84,9 +88,15 @@ class RecepController extends Controller
     //-------------------------------------------POST----------------------------------------------------
     public function secondday($dni,$date)
     {
-        $box=Box::where('Id_Est','Activo')->get();
         $presentation=Presentation::orderBy('Date','desc')->limit(3)->get();
-//        return view('recepcionist.second')->with(compact('dni','box'));
-        return view('recepcionist.second')->with(compact('dni','box','presentation'));
+        foreach ($presentation as $item)
+        {
+            if($date==$item['Date'])
+            {
+                $fecha=$item['Id_Pre'];
+            }
+        }
+        $boxes=Box_Presentation::where('Id_Pre',$fecha)->get();
+        return view('recepcionist.second')->with(compact('dni','boxes','presentation'));
     }
 }

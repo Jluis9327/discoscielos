@@ -19,5 +19,17 @@ class StateTableSeeder extends Seeder
             'Name'=>'Inactivo',
             'Id_Ti'=>1
         ]);
+        State::create([
+            'Name'=>'Disponible',
+            'Id_Ti'=>2
+        ]);
+        State::create([
+            'Name'=>'Reservado',
+            'Id_Ti'=>2
+        ]);
+        State::create([
+            'Name'=>'Alquilado',
+            'Id_Ti'=>2
+        ]);
     }
 }

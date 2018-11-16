@@ -22,40 +22,40 @@
 
                         ?>
                         <tr>
-                            <td style="background-color: #ffc107;color: black"><input type="checkbox" size="5" name="R4" id="400"> R4 - 400</td>
-                            <td style="background-color: #ffc107;color: black"><input type="checkbox" size="5" name="S4" id="400"> S4 - 400</td>
-                            <td style="background-color: #ffc107;color: black"><input type="checkbox" size="5" name="T4" id="400"> T4 - 400</td>
+                            <td style="background-color: #ffc107;color: black"><input type="checkbox" size="5" name="R4" id="400" <?php for ($i=0;$i<count($boxes);$i++){if($boxes[$i]->box->Cod_Bo=="R4"){if($boxes[$i]->Id_Est=="3"){}elseif($boxes[$i]->Id_Est=="4"){echo "disabled checked";}elseif ($boxes[$i]->Id_Est=="5"){echo "disabled checked";}}}?>> R4 - 400</td>
+                            <td style="background-color: #ffc107;color: black"><input type="checkbox" size="5" name="S4" id="400" <?php for ($i=0;$i<count($boxes);$i++){if($boxes[$i]->box->Cod_Bo=="S4"){if($boxes[$i]->Id_Est=="3"){}elseif($boxes[$i]->Id_Est=="4"){echo "disabled checked";}elseif ($boxes[$i]->Id_Est=="5"){echo "disabled checked";}}}?>> S4 - 400</td>
+                            <td style="background-color: #ffc107;color: black"><input type="checkbox" size="5" name="T4" id="400" <?php for ($i=0;$i<count($boxes);$i++){if($boxes[$i]->box->Cod_Bo=="T4"){if($boxes[$i]->Id_Est=="3"){}elseif($boxes[$i]->Id_Est=="4"){echo "disabled checked";}elseif ($boxes[$i]->Id_Est=="5"){echo "disabled checked";}}}?>> T4 - 400</td>
                             <td style="background-color: white;color: black;text-align: center;font-family: 'Arial Black'" colspan="3">ESCENARIO</td>
                             <td style="background-color: #6c757d;color: white;text-align: center">Escalera</td>
-                            <td style="background-color: #18d26e;color: black"><input type="checkbox" size="5" name="K4" id="600"> K4 - 600</td>
-                            <td style="background-color: #18d26e;color: black"><input type="checkbox" size="5" name="L4" id="600"> L4 - 600</td>
+                            <td style="background-color: #18d26e;color: black"><input type="checkbox" size="5" name="K4" id="600" <?php for ($i=0;$i<count($boxes);$i++){if($boxes[$i]->box->Cod_Bo=="K4"){if($boxes[$i]->Id_Est=="3"){}elseif($boxes[$i]->Id_Est=="4"){echo "disabled checked";}elseif ($boxes[$i]->Id_Est=="5"){echo "disabled checked";}}}?>> K4 - 600</td>
+                            <td style="background-color: #18d26e;color: black"><input type="checkbox" size="5" name="L4" id="600" <?php for ($i=0;$i<count($boxes);$i++){if($boxes[$i]->box->Cod_Bo=="L4"){if($boxes[$i]->Id_Est=="3"){}elseif($boxes[$i]->Id_Est=="4"){echo "disabled checked";}elseif ($boxes[$i]->Id_Est=="5"){echo "disabled checked";}}}?>> L4 - 600</td>
                         </tr>
                         <tr>
-                            <td style="background-color: #ffc107;color: black"><input type="checkbox" size="5" name="R3" id="400"> R3 - 400</td>
+                            <td style="background-color: #ffc107;color: black"><input type="checkbox" size="5" name="R3" id="400" <?php for ($i=0;$i<count($boxes);$i++){if($boxes[$i]->box->Cod_Bo=="R3"){if($boxes[$i]->Id_Est=="3"){}elseif($boxes[$i]->Id_Est=="4"){echo "disabled checked";}elseif ($boxes[$i]->Id_Est=="5"){echo "disabled checked";}}}?>> R3 - 400</td>
                             <td style="color: white;text-align: center">ZONA DE</td>
-                            <td style="background-color: #ffc107;color: black"><input type="checkbox" size="5" name="T3" id="400"> T3 - 400</td>
+                            <td style="background-color: #ffc107;color: black"><input type="checkbox" size="5" name="T3" id="400" <?php for ($i=0;$i<count($boxes);$i++){if($boxes[$i]->box->Cod_Bo=="T3"){if($boxes[$i]->Id_Est=="3"){}elseif($boxes[$i]->Id_Est=="4"){echo "disabled checked";}elseif ($boxes[$i]->Id_Est=="5"){echo "disabled checked";}}}?>> T3 - 400</td>
                             <td colspan="3">&nbsp;</td>
-                            <td style="background-color: #18d26e;color: black"><input type="checkbox" size="5" name="J3" id="600"> J3 - 600</td>
+                            <td style="background-color: #18d26e;color: black"><input type="checkbox" size="5" name="J3" id="600" <?php for ($i=0;$i<count($boxes);$i++){if($boxes[$i]->box->Cod_Bo=="J3"){if($boxes[$i]->Id_Est=="3"){}elseif($boxes[$i]->Id_Est=="4"){echo "disabled checked";}elseif ($boxes[$i]->Id_Est=="5"){echo "disabled checked";}}}?>> J3 - 600</td>
                             <td style="color: white;text-align: center">ZONA DE</td>
-                            <td style="background-color: #18d26e;color: black"><input type="checkbox" size="5" name="L3" id="600"> L3 - 600</td>
+                            <td style="background-color: #18d26e;color: black"><input type="checkbox" size="5" name="L3" id="600" <?php for ($i=0;$i<count($boxes);$i++){if($boxes[$i]->box->Cod_Bo=="L3"){if($boxes[$i]->Id_Est=="3"){}elseif($boxes[$i]->Id_Est=="4"){echo "disabled checked";}elseif ($boxes[$i]->Id_Est=="5"){echo "disabled checked";}}}?>> L3 - 600</td>
                         </tr>
                         <tr>
-                            <td style="background-color: #ffc107;color: black"><input type="checkbox" size="5" name="R2" id="400"> R2 - 400</td>
+                            <td style="background-color: #ffc107;color: black"><input type="checkbox" size="5" name="R2" id="400" <?php for ($i=0;$i<count($boxes);$i++){if($boxes[$i]->box->Cod_Bo=="R2"){if($boxes[$i]->Id_Est=="3"){}elseif($boxes[$i]->Id_Est=="4"){echo "disabled checked";}elseif ($boxes[$i]->Id_Est=="5"){echo "disabled checked";}}}?>> R2 - 400</td>
                             <td style="color: white;text-align: center">BAILE</td>
-                            <td style="background-color: #ffc107;color: black"><input type="checkbox" size="5" name="T2" id="400"> T2 - 400</td>
-                            <td style="background-color: #007bff;color: white"><input type="checkbox" size="5" name="A1" id="500"> A1 - 500</td>
-                            <td style="background-color: #007bff;color: white"><input type="checkbox" size="5" name="A2" id="500"> A2 - 500</td>
-                            <td style="background-color: #007bff;color: white"><input type="checkbox" size="5" name="A3" id="500"> A3 - 500</td>
-                            <td style="background-color: #18d26e;color: black"><input type="checkbox" size="5" name="J2" id="600"> J2 - 600</td>
+                            <td style="background-color: #ffc107;color: black"><input type="checkbox" size="5" name="T2" id="400" <?php for ($i=0;$i<count($boxes);$i++){if($boxes[$i]->box->Cod_Bo=="T2"){if($boxes[$i]->Id_Est=="3"){}elseif($boxes[$i]->Id_Est=="4"){echo "disabled checked";}elseif ($boxes[$i]->Id_Est=="5"){echo "disabled checked";}}}?>> T2 - 400</td>
+                            <td style="background-color: #007bff;color: white"><input type="checkbox" size="5" name="A1" id="500" <?php for ($i=0;$i<count($boxes);$i++){if($boxes[$i]->box->Cod_Bo=="A1"){if($boxes[$i]->Id_Est=="3"){}elseif($boxes[$i]->Id_Est=="4"){echo "disabled checked";}elseif ($boxes[$i]->Id_Est=="5"){echo "disabled checked";}}}?>> A1 - 500</td>
+                            <td style="background-color: #007bff;color: white"><input type="checkbox" size="5" name="A2" id="500" <?php for ($i=0;$i<count($boxes);$i++){if($boxes[$i]->box->Cod_Bo=="A2"){if($boxes[$i]->Id_Est=="3"){}elseif($boxes[$i]->Id_Est=="4"){echo "disabled checked";}elseif ($boxes[$i]->Id_Est=="5"){echo "disabled checked";}}}?>> A2 - 500</td>
+                            <td style="background-color: #007bff;color: white"><input type="checkbox" size="5" name="A3" id="500" <?php for ($i=0;$i<count($boxes);$i++){if($boxes[$i]->box->Cod_Bo=="A3"){if($boxes[$i]->Id_Est=="3"){}elseif($boxes[$i]->Id_Est=="4"){echo "disabled checked";}elseif ($boxes[$i]->Id_Est=="5"){echo "disabled checked";}}}?>> A3 - 500</td>
+                            <td style="background-color: #18d26e;color: black"><input type="checkbox" size="5" name="J2" id="600" <?php for ($i=0;$i<count($boxes);$i++){if($boxes[$i]->box->Cod_Bo=="J2"){if($boxes[$i]->Id_Est=="3"){}elseif($boxes[$i]->Id_Est=="4"){echo "disabled checked";}elseif ($boxes[$i]->Id_Est=="5"){echo "disabled checked";}}}?>> J2 - 600</td>
                             <td style="color: white;text-align: center">BAILE</td>
-                            <td style="background-color: #18d26e;color: black"><input type="checkbox" size="5" name="L2" id="600"> L2 - 600</td>
+                            <td style="background-color: #18d26e;color: black"><input type="checkbox" size="5" name="L2" id="600" <?php for ($i=0;$i<count($boxes);$i++){if($boxes[$i]->box->Cod_Bo=="L2"){if($boxes[$i]->Id_Est=="3"){}elseif($boxes[$i]->Id_Est=="4"){echo "disabled checked";}elseif ($boxes[$i]->Id_Est=="5"){echo "disabled checked";}}}?>> L2 - 600</td>
                         </tr>
                         <tr>
-                            <td style="background-color: #ffc107;color: black"><input type="checkbox" size="5" name="R1" id="400"> R1 - 400</td>
-                            <td style="background-color: #ffc107;color: black"><input type="checkbox" size="5" name="S1" id="400"> S1 - 400</td>
+                            <td style="background-color: #ffc107;color: black"><input type="checkbox" size="5" name="R1" id="400" <?php for ($i=0;$i<count($boxes);$i++){if($boxes[$i]->box->Cod_Bo=="R1"){if($boxes[$i]->Id_Est=="3"){}elseif($boxes[$i]->Id_Est=="4"){echo "disabled checked";}elseif ($boxes[$i]->Id_Est=="5"){echo "disabled checked";}}}?>> R1 - 400</td>
+                            <td style="background-color: #ffc107;color: black"><input type="checkbox" size="5" name="S1" id="400" <?php for ($i=0;$i<count($boxes);$i++){if($boxes[$i]->box->Cod_Bo=="S1"){if($boxes[$i]->Id_Est=="3"){}elseif($boxes[$i]->Id_Est=="4"){echo "disabled checked";}elseif ($boxes[$i]->Id_Est=="5"){echo "disabled checked";}}}?>> S1 - 400</td>
                             <td style="background-color: black;text-align: center;color: white" colspan="5">ZONA LIBRE - PASADIZO</td>
-                            <td style="background-color: #18d26e;color: black"><input type="checkbox" size="5" name="K1" id="600"> K1 - 600</td>
-                            <td style="background-color: #18d26e;color: black"><input type="checkbox" size="5" name="L1" id="600"> L1 - 600</td>
+                            <td style="background-color: #18d26e;color: black"><input type="checkbox" size="5" name="K1" id="600" <?php for ($i=0;$i<count($boxes);$i++){if($boxes[$i]->box->Cod_Bo=="K1"){if($boxes[$i]->Id_Est=="3"){}elseif($boxes[$i]->Id_Est=="4"){echo "disabled checked";}elseif ($boxes[$i]->Id_Est=="5"){echo "disabled checked";}}}?>> K1 - 600</td>
+                            <td style="background-color: #18d26e;color: black"><input type="checkbox" size="5" name="L1" id="600" <?php for ($i=0;$i<count($boxes);$i++){if($boxes[$i]->box->Cod_Bo=="L1"){if($boxes[$i]->Id_Est=="3"){}elseif($boxes[$i]->Id_Est=="4"){echo "disabled checked";}elseif ($boxes[$i]->Id_Est=="5"){echo "disabled checked";}}}?>> L1 - 600</td>
                         </tr>
                     </table>
                     <br><br>

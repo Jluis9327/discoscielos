@@ -17,6 +17,9 @@ class TypeTableSeeder extends Seeder
         Type::create([
             'Name'=>'User'
         ]);
+        Type::create([
+            'Name'=>'Box_Presentation'
+        ]);
 
     }
 }

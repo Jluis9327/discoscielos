@@ -366,6 +366,7 @@ class ComposerStaticInita99680f6c7b9ae9588875c02bf645bfd
         'AssertionError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/AssertionError.php',
         'BannerTableSeeder' => __DIR__ . '/../..' . '/database/seeds/BannerTableSeeder.php',
         'BoxTableSeeder' => __DIR__ . '/../..' . '/database/seeds/BoxTableSeeder.php',
+        'Box_PresentationTableSeeder' => __DIR__ . '/../..' . '/database/seeds/Box_PresentationTableSeeder.php',
         'Carbon\\Carbon' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Carbon.php',
         'Carbon\\CarbonInterval' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/CarbonInterval.php',
         'Carbon\\CarbonPeriod' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/CarbonPeriod.php',
