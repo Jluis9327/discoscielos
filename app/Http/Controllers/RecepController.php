@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Box;
+use App\Onelevel_Presentation;
 use App\Presentation;
 use App\User;
 use Illuminate\Http\Request;
@@ -19,8 +20,9 @@ class RecepController extends Controller
     {
         $presentation=Presentation::orderBy('Date','desc')->limit(3)->get();
         $date=$presentation[2]->Date;
-        $boxes=Box_Presentation::where('Id_Pre',$presentation[2]->Id_Pre)->get();
-        return view('recepcionist.zone')->with(compact('dni','presentation','date','boxes'));
+       // $boxes=Box_Presentation::where('Id_Pre',$presentation[2]->Id_Pre)->get();
+      //  return view('recepcionist.zone')->with(compact('dni','presentation','date','boxes'));
+        return view('recepcionist.zone')->with(compact('dni','presentation','date'));
     }
     public function search(Request $request)
     {
@@ -81,9 +83,17 @@ class RecepController extends Controller
         }
 
     }
-    public function first(Request $request){
-        $dni=$request->dni;
-        return view('recepcionist.first')->with(compact('dni'));
+    public function first($dni,$date){
+        $presentation=Presentation::orderBy('Date','desc')->limit(3)->get();
+        foreach ($presentation as $item)
+        {
+            if($date==$item['Date'])
+            {
+                $idpresentacion=$item['Id_Pre'];
+            }
+        }
+        $disponible=Onelevel_Presentation::where('Id_Pre','=',$idpresentacion)->get();
+        return view('recepcionist.first')->with(compact('dni','presentation','disponible'));
     }
     //-------------------------------------------POST----------------------------------------------------
     public function secondday($dni,$date)

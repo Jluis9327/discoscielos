@@ -61,9 +61,13 @@
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h3>Cliente no Registrado, Desea registrarlo?</h3>
-                            <p>x</p>
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
                         </div>
+                        <div class="modal-body">
+                            <h3>Cliente no Registrado, Desea registrarlo?</h3>
+                        </div>
+                    </div>
                         <div class="modal-footer">
                             <a  href="{{url('/recep/register/'.$dni)}}"><input type="submit" value="Si" class="btn btn-success" ></a>
                             <button class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
