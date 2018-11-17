@@ -8,6 +8,9 @@ use App\Presentation;
 use App\User;
 use Illuminate\Http\Request;
 use App\Box_Presentation;
+use App\Reservation;
+use Illuminate\Support\Facades\Auth;
+use App\Twolevel_Box;
 
 
 class RecepController extends Controller
@@ -96,7 +99,7 @@ class RecepController extends Controller
         return view('recepcionist.first')->with(compact('dni','presentation','disponible'));
     }
     //-------------------------------------------POST----------------------------------------------------
-    public function secondday($dni,$date)
+    public function seconddayindex($dni,$date)
     {
         $presentation=Presentation::orderBy('Date','desc')->limit(3)->get();
         foreach ($presentation as $item)
@@ -106,7 +109,42 @@ class RecepController extends Controller
                 $fecha=$item['Id_Pre'];
             }
         }
+
         $boxes=Box_Presentation::where('Id_Pre',$fecha)->get();
-        return view('recepcionist.second')->with(compact('dni','boxes','presentation'));
+        return view('recepcionist.second')->with(compact('dni','boxes','presentation','date'));
+    }
+    public function secondday(Request $request,$dni,$date)
+    {
+        //dd(Auth::user()->id);
+        $reservation=new Reservation();
+        $reservation->Date=$date;
+        $reservation->Id_Est=5;
+        $reservation->Id_U=Auth::user()->id;
+        $user=User::where('DNI','=',$dni)->get();
+        $reservation->Id_Cli=$user[0]->id;
+        $reservation->Total=$request->total;
+        $reservation->save();
+        $box=Box::all();
+        foreach ($box as $item)
+        {
+            if($request[$item['Cod_Bo']]!==null)
+            {
+                $twolevel_box=new Twolevel_Box();
+                $twolevel_box->Id_Bo=$item['Id_Bo'];
+                $reservation1=Reservation::orderBy('Id_Re','desc')->limit(1)->get();
+                foreach ($reservation1 as $item2)
+                {
+                    $twolevel_box->Id_Re=$item2['Id_Re'];
+                    $presentation=Presentation::where('Date','=',$date)->get();
+                    Box_Presentation::where('Id_Bo','=',$item['Id_Bo'])->where('Id_Pre','=',$presentation[0]->Id_Pre)->update(['Id_Est' => 5]);
+                }
+                $twolevel_box->save();
+            }
+        }
+        return redirect('/recep/zone/secondlevel/'.$dni.'/day/'.$date.'/confirm');
+    }
+    public function confirmindex($dni,$date)
+    {
+        return view('recepcionist.confirm')->with(compact('dni','date'));
     }
 }

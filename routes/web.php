@@ -38,7 +38,9 @@ Route::middleware(['auth','recep'])->group(function () {
     Route::get('/recep/zone/{id}','RecepController@zone')->name('recep.zone');
     //Route::post('/recep/zone','RecepController@zone');
     Route::get('/recep/zone/firstlevel/{dni}/day/{date}','RecepController@first');
-    Route::get('/recep/zone/secondlevel/{dni}/day/{date}','RecepController@secondday');
+    Route::get('/recep/zone/secondlevel/{dni}/day/{date}','RecepController@seconddayindex');
+    Route::post('/recep/zone/secondlevel/{dni}/day/{date}','RecepController@secondday');
+    Route::get('/recep/zone/secondlevel/{dni}/day/{date}/confirm','RecepController@confirmindex');
 
 });
 Route::middleware(['auth','client'])->group(function () {
