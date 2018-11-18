@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Box;
+use App\Onelevel;
 use App\Onelevel_Presentation;
 use App\Presentation;
 use App\User;
@@ -97,6 +98,61 @@ class RecepController extends Controller
         }
         $disponible=Onelevel_Presentation::where('Id_Pre','=',$idpresentacion)->get();
         return view('recepcionist.first')->with(compact('dni','presentation','disponible'));
+    }
+    public function firstlevelReserva(Request $request){
+        $dni=$request->dni;
+        $id=$request->id;
+        $iduser=$request->user;
+        $presentation=Presentation::Where('Id_Pre','=',$id)->get();
+        $cantidad=$request->cantidad;
+        foreach ($presentation as $item){
+            $fecha=$item['Date'];
+        }
+        $clien=User::Where('DNI','=',$dni)->get();
+        foreach ($clien as $cliente){
+            $idcli=$cliente['id'];
+        }
+        if($cantidad!=""){
+            //---------RESERVATION-----------
+            $objReserva = new Reservation();
+            $objReserva->Date=$fecha;
+            $objReserva->Id_Est=6;
+            $objReserva->Id_U=$iduser;
+            $objReserva->Id_Cli=$idcli;
+            $objReserva->Total=$cantidad*25;
+            $objReserva->save();
+            //--------ONE LEVEL--------------
+            $idRe=Reservation::orderBy('Id_Re','desc')->limit(1)->get();
+            foreach ($idRe as $item){
+                $idreservation=$item['Id_Re'];
+            }
+            $objone= new Onelevel();
+            $objone->Id_Re=$idreservation;
+            $objone->quantity=$cantidad;
+            $objone->total=$cantidad*20;
+            $objone->Id_pre=$id;
+            $objone->save();
+            //-----------ONELEVEL PRESENTATION--------------
+            $objonePresentation=Onelevel::where('Id_Re','=',$idreservation)->get();
+            foreach ($objonePresentation as $item){
+                $contador=$item['quantity'];
+                if($contador<=60){
+                    $contador=60-$contador-$cantidad;
+                    Onelevel_Presentation::where('Id_Pre','=',$item['Id_Pre'])->update(['quantity' => $contador]);
+//                    DB::table('onelevels_presentations')
+//                        ->where('Id_Pre', $item['Id_Pre'])
+//                        ->update(['quantity' => $contador]);
+                }
+                else{
+                    return redirect('/recep/zone/firstlevel/'.$dni.'/day/'.$fecha);
+                }
+            }
+        }
+        else{
+            return redirect('/recep/zone/firstlevel/'.$dni.'/day/'.$fecha);
+        }
+        return view('recepcionist.confirm');
+
     }
     //-------------------------------------------POST----------------------------------------------------
     public function seconddayindex($dni,$date)

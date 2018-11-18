@@ -84,9 +84,6 @@
                     }
 
                 }?>
-
-
-
             <center><a href="{{url('/recep')}}"><i class="ion-ios-undo-outline" style="font-size: 350%"></i></a><h6 style="color: white; font-family: 'Arial Black'">MENU PRINCIPAL</h6></center>
         </div>
 

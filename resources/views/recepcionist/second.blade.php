@@ -108,7 +108,6 @@
                 y=parseInt($("#total0").val())-parseInt($(x).val());
                 $("#total0").val(y);
             }
-
         }
 
     </script>

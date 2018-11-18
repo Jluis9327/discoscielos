@@ -20,6 +20,11 @@
                             <td>Ingresar DNI</td>
                             <td></td><td></td><td></td><td></td>
                             <td><input id="dni" type="text" class="form-control" name="dni" placeholder="DNI" style="text-align: center; background-color: transparent; color: white" autocomplete="off" maxlength="8" value="<?php echo e($dni); ?>" onkeypress="return validaNumericos(event)" ></td>
+                            <?php if($errors->has('dni')): ?>
+                                <span class="help-block">
+                                        <strong><?php echo e($errors->first('dni')); ?></strong>
+                                    </span>
+                            <?php endif; ?>
                             <td><input name="btn_buscar" type="submit" class="btn btn-outline-success" value="BUSCAR"></td>
                         </tr>
                     </table>

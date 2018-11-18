@@ -3,7 +3,7 @@
     <section id="portfolio"  class="section-bg" >
         <div class="container">
             <div class="section-header">
-                <br><br><h3 style="color: white">REGISTRAR CLIENTE</h3>
+                <br><br><h3 style="color: white">REGISTRAR USUARIOS</h3>
             </div>
             <form method="post" action="{{url('/admin/register')}}" enctype="multipart/form-data" >
                 {{csrf_field()}}

@@ -69,7 +69,7 @@
 
                 <div class="form-group<?php echo e($errors->has('password') ? ' has-error' : ''); ?>">
                     <center><div class="col-md-4">
-                            <input id="password" type="password" class="form-control" name="password" placeholder="Contraseña" style="text-align: center; background-color: transparent; color: white" required>
+                            <input id="password" type="password" class="form-control" name="password" placeholder="Contraseña" style="text-align: center; background-color: transparent; color: white" value="<?php echo e($id); ?>" required disabled>
 
                             <?php if($errors->has('password')): ?>
                                 <span class="help-block">
