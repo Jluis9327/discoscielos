@@ -73,10 +73,10 @@ class RecepController extends Controller
         $dni=$request->dni;
         $id=$dni;
         $phone=$request->phone;
-        $user=User::where('name','like','%',$dni)->orWhere('name','like','%',$phone);
-        if($dni != null && strlen($dni) == 8) {
-            if ($user==null) {
-                try {
+        if(strlen($dni) == 8) {
+            //dd('bien');
+            $user=User::where('DNI','=',$dni)->orWhere('phone','=',$phone)->get();
+            if ($user->isEmpty()) {
                     $objuser = new User();
                     $objuser->DNI = $dni;
                     $objuser->name = $request->name;
@@ -87,21 +87,21 @@ class RecepController extends Controller
                     $objuser->Id_Rol = 3;
                     $objuser->Id_Est = 1;
                     $save = $objuser->save();
-                    
                     $dni = $request->dni;
-                    //return redirect()->action('RecepController@zone',['dni'=>$dni]);
-                    //return redirect()->route('recep.zone',[$dni]);
                     return redirect('/recep/zone/'. $dni);
-                } catch (Exception $e) {
-                    return view('recepcionist.register')->with(compact('id'));
-                }
+//                    if($save==true) {
+//                        return redirect('/recep/zone/'. $dni);
+//                    }else{
+//                    $mensaje=true;
+//                    return view('recepcionist.register')->with(compact('id','mensaje'));
+//                    }
             } else {
                 $mensaje=true;
                 return view('recepcionist.register')->with(compact('id','mensaje'));
             }
         }
         else{
-
+            //dd('hola');
             return view('recepcionist.register')->with(compact('id'));
         }
     }

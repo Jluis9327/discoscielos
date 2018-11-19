@@ -87,7 +87,7 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <button type="button" data-dismiss="modal" class="btn">Cancel</button>
                             </div>
                             <div class="modal-body">
                                 <h3>Ingresar correctamente el DNI</h3>
@@ -96,13 +96,12 @@
                     </div>
                 </div>
             </div>
+
                 <?php
                     }
-
                 }?>
             <center><a href="<?php echo e(url('/recep')); ?>"><i class="ion-ios-undo-outline" style="font-size: 350%"></i></a><h6 style="color: white; font-family: 'Arial Black'">MENU PRINCIPAL</h6></center>
         </div>
-
     </section>
     <script type="text/javascript">
         window.onload=function () {

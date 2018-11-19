@@ -76,7 +76,7 @@
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="Confirme Contraseña" style="text-align: center; background-color: transparent; color: white" required>
                                 </div></center>
                         </div>
-                        <input type="checkbox" name="checkbox" id="option" value="<?php echo e(old('option')); ?>">
+                        <input type="checkbox" name="checkboxes"  id="checkboxes"  >
                         <label for="cbox2"><button class='btn btn-primary' data-toggle='modal' data-target='#pk-modal' onclick='click' id='id01'>Leer Términos y condiciones</button></label>
                         <div class="form-group">
                                 <button type="submit" class="btn btn-outline-success">

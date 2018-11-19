@@ -187,9 +187,7 @@
 <!-- Contact Form JavaScript File -->
 <script src="{{asset('js/modifyUser.js')}}" type="text/javascript"></script>
 <script src="{{asset('js/validation.js')}}" type="text/javascript"></script>
-
 <!-- Template Main Javascript File -->
 <script src="{{asset('js/main.js')}}" type="text/javascript"></script>
-<script src="{{asset('js/validation.js')}}" type="text/javascript"></script>
 </body>
 </html>

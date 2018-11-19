@@ -17,7 +17,7 @@
                 {{csrf_field()}}
                 <div class="form-group{{ $errors->has('DNI') ? ' has-error' : '' }}">
                     <center><div class="col-md-4">
-                            <input id="DNI" type="text" class="form-control" name="dni" placeholder="DNI" style="text-align: center; background-color: transparent; color: white" value="{{ $id }}" maxlength="8" onkeypress="validaNumericos(event)" required autofocus>
+                            <input id="dni" type="text" class="form-control" name="dni" placeholder="DNI" style="text-align: center; background-color: transparent; color: white" value="{{ $id }}" maxlength="8" onkeypress="return validaNumericos(event)" required autofocus>
                             @if ($errors->has('DNI'))
                                 <span class="help-block">
                                                     <strong>{{ $errors->first('DNI') }}</strong>
@@ -47,7 +47,7 @@
                 </div>
                 <div class="form-group{{ $errors->has('phone') ? ' has-error' : '' }}">
                     <center><div class="col-md-4">
-                            <input id="phone" type="text" class="form-control" name="phone" placeholder="Teléfono" style="text-align: center; background-color: transparent; color: white" value="{{ old('phone') }}" maxlength="9" onkeypress="validaNumericos(this)" required >
+                            <input id="phone" type="text" class="form-control" name="phone" placeholder="Teléfono" style="text-align: center; background-color: transparent; color: white" value="{{ old('phone') }}" maxlength="9" onkeypress="return validaNumericos(event)" required >
                             @if ($errors->has('phone'))
                                 <span class="help-block">
                                                                 <strong>{{ $errors->first('phone') }}</strong>
@@ -66,7 +66,6 @@
                             @endif
                         </div></center>
                 </div>
-
                 <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                     <center><div class="col-md-4">
                             <input id="password" type="password" class="form-control" name="password" placeholder="Contraseña" style="text-align: center; background-color: transparent; color: white" value="{{ $id }}" onkeypress="validaNumericos(event)" required disabled>
@@ -99,13 +98,14 @@
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                             </div>
                             <div class="modal-body">
-                                <h3>Datos existentes, ingrese nuevamente los datos del cliente</h3>
+                                <h3>Ingresar correctamente el DNI</h3>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
-        <?php
+            <?php
             }?>
             <br>
             <center><a href="{{url('/recep')}}"><i class="ion-ios-undo-outline" style="font-size: 350%"></i></a><h6 style="color: white; font-family: 'Arial Black'">MENU PRINCIPAL</h6></center>
@@ -116,4 +116,5 @@
             document.getElementById('id01').click();
         }
     </script>
+
 @endsection
