@@ -70,38 +70,36 @@ class RecepController extends Controller
     }
     public function register(Request $request)
     {
-        $dni=$request->dni;
+        //dd($request->dni);
+        $dni=$request->DNI;
         $id=$dni;
         $phone=$request->phone;
         if(strlen($dni) == 8) {
-            //dd('bien');
-            $user=User::where('DNI','=',$dni)->orWhere('phone','=',$phone)->get();
-            if ($user->isEmpty()) {
-                    $objuser = new User();
-                    $objuser->DNI = $dni;
-                    $objuser->name = $request->name;
-                    $objuser->surname = $request->surname;
-                    $objuser->phone = $request->phone;
-                    $objuser->email = $request->email;
-                    $objuser->password = bcrypt($request->pass);
-                    $objuser->Id_Rol = 3;
-                    $objuser->Id_Est = 1;
-                    $save = $objuser->save();
-                    $dni = $request->dni;
-                    return redirect('/recep/zone/'. $dni);
-//                    if($save==true) {
-//                        return redirect('/recep/zone/'. $dni);
-//                    }else{
-//                    $mensaje=true;
-//                    return view('recepcionist.register')->with(compact('id','mensaje'));
-//                    }
+           $v=\Validator::make($request->all(), [
+                'DNI'=>'required|integer|min:8|unique:users',
+                'name' => 'required|string|max:255',
+                'surname'=>'required|string|max:255',
+                'phone'=>'required|integer|min:9|unique:users',
+                'email' => 'required|string|email|max:255|unique:users',
+                'password' => 'required|string|min:6',]);
+            if ($v->fails()) {
+                return redirect()->back()->withInput()->withErrors($v->errors());
             } else {
-                $mensaje=true;
-                return view('recepcionist.register')->with(compact('id','mensaje'));
+                $objuser = new User();
+                $objuser->DNI = $dni;
+                $objuser->name = $request->name;
+                $objuser->surname = $request->surname;
+                $objuser->phone = $request->phone;
+                $objuser->email = $request->email;
+                $objuser->password = bcrypt($request->pass);
+                $objuser->Id_Rol = 3;
+                $objuser->Id_Est = 1;
+                $save = $objuser->save();
+                $dni = $request->dni;
+                return redirect('/recep/zone/'. $dni);
             }
         }
         else{
-            //dd('hola');
             return view('recepcionist.register')->with(compact('id'));
         }
     }
