@@ -20,11 +20,6 @@
                             <td>Ingresar DNI</td>
                             <td></td><td></td><td></td><td></td>
                             <td><input id="dni" type="text" class="form-control" name="dni" placeholder="DNI" style="text-align: center; background-color: transparent; color: white" autocomplete="off" maxlength="8" value="<?php echo e($dni); ?>" onkeypress="return validaNumericos(event)" ></td>
-                            <?php if($errors->has('dni')): ?>
-                                <span class="help-block">
-                                        <strong><?php echo e($errors->first('dni')); ?></strong>
-                                    </span>
-                            <?php endif; ?>
                             <td><input name="btn_buscar" type="submit" class="btn btn-outline-success" value="BUSCAR"></td>
                         </tr>
                     </table>
@@ -56,7 +51,7 @@
                 </tr>
                 </table>
                 <?php }
-                    elseif($dato->isEmpty()){
+                    elseif($dato->isEmpty() && $mensaje2==false){
                 ?>
             <button class='btn btn-primary' data-toggle='modal' data-target='#pk-modal' onclick='click' id='id01'
                     style='display: none'>Abrir Modal
@@ -80,23 +75,40 @@
                     </div>
                 </div>
             </div>
-            <script type="text/javascript">
-                window.onload=function () {
-                    document.getElementById('id01').click();
-                }
-            </script>
+            <?php }
+            elseif($dato->isEmpty() && $mensaje2==true){
+            ?>
+            <button class='btn btn-primary' data-toggle='modal' data-target='#pk-modal' onclick='click' id='id01'
+                    style='display: none'>Abrir Modal
+            </button>
+            <div class="modal fade " id="pk-modal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
+                 aria-labelledby="pk-modal" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <h3>Ingresar correctamente el DNI</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
                 <?php
                     }
 
                 }?>
-
-
-
             <center><a href="<?php echo e(url('/recep')); ?>"><i class="ion-ios-undo-outline" style="font-size: 350%"></i></a><h6 style="color: white; font-family: 'Arial Black'">MENU PRINCIPAL</h6></center>
         </div>
 
     </section>
-
+    <script type="text/javascript">
+        window.onload=function () {
+            document.getElementById('id01').click();
+        }
+    </script>
 <?php $__env->stopSection(); ?>
 
 <?php echo $__env->make('layouts.app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

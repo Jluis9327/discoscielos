@@ -51,7 +51,7 @@
                 </tr>
                 </table>
                 <?php }
-                    elseif($dato->isEmpty()){
+                    elseif($dato->isEmpty() && $mensaje2==false){
                 ?>
             <button class='btn btn-primary' data-toggle='modal' data-target='#pk-modal' onclick='click' id='id01'
                     style='display: none'>Abrir Modal
@@ -75,11 +75,27 @@
                     </div>
                 </div>
             </div>
-            <script type="text/javascript">
-                window.onload=function () {
-                    document.getElementById('id01').click();
-                }
-            </script>
+            <?php }
+            elseif($dato->isEmpty() && $mensaje2==true){
+            ?>
+            <button class='btn btn-primary' data-toggle='modal' data-target='#pk-modal' onclick='click' id='id01'
+                    style='display: none'>Abrir Modal
+            </button>
+            <div class="modal fade " id="pk-modal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
+                 aria-labelledby="pk-modal" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <h3>Ingresar correctamente el DNI</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
                 <?php
                     }
 
@@ -88,5 +104,9 @@
         </div>
 
     </section>
-
+    <script type="text/javascript">
+        window.onload=function () {
+            document.getElementById('id01').click();
+        }
+    </script>
 @endsection

@@ -24,7 +24,7 @@
             </center>
             <br><br><center><input type="submit" class="btn btn-outline-success" value="RESERVAR"></center><br>
             </form>
-            <center><a href="cliente_menu.html"><i class="ion-ios-undo-outline" style="font-size: 350%"></i></a>
+            <center><a href="<?php echo e(url('/client/zone')); ?>"><i class="ion-ios-undo-outline" style="font-size: 350%"></i></a>
                 <h6 style="color: white; font-family: 'Arial Black'">MENU PRINCIPAL</h6></center>
 
             <div class="facts-img"></div>

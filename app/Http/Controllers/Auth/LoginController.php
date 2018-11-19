@@ -59,7 +59,8 @@ class LoginController extends Controller
             }
         }
         elseif (auth()->user()->Id_Rol==3){
-            return $this->redirectTo='/client';
+//            return $this->redirectTo='/client';
+            return $this->redirectTo='';
         }
 
         //return property_exists($this, 'redirectTo') ? $this->redirectTo : '/home';

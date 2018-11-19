@@ -5,8 +5,10 @@ namespace App\Http\Controllers\Auth;
 use App\User;
 use App\Banner;
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Mockery\Exception;
 
 class RegisterController extends Controller
 {
@@ -55,7 +57,8 @@ class RegisterController extends Controller
             'phone'=>'required|integer|min:9',
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:6|confirmed',
-
+            //-----------RECIEN INCORPORADO----------------
+            'checkbox' =>'required',
         ]);
     }
 
@@ -67,21 +70,30 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-            return User::create([
-                'DNI'=>$data['DNI'],
-                'name' => $data['name'],
-                'surname'=>$data['surname'],
-                'phone'=>$data['phone'],
-                'email' => $data['email'],
-                'password' => bcrypt($data['password']),
-                'Id_Rol'=>3,
-                'Id_Est'=>1
-            ]);
+//        try {
+//            $cbx=$_POST['cbox2'];
+//            if (isset($cbx) != null) {
+                return User::create([
+                    'DNI' => $data['DNI'],
+                    'name' => $data['name'],
+                    'surname' => $data['surname'],
+                    'phone' => $data['phone'],
+                    'email' => $data['email'],
+                    'password' => bcrypt($data['password']),
+                    'Id_Rol' => 3,
+                    'Id_Est' => 1
+                ]);
+//            }
+//        }catch (Exception $e){
+//                return view('/register');
+//        }
+
     }
     public function redirectPath()
     {
         if (auth()->user()->Id_Rol==3){
-            return $this->redirectTo='/client';
+            return $this->redirectTo='/';
+            //return $this->redirectTo='/client';
         }
     }
 }

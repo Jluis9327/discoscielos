@@ -187,6 +187,7 @@
 <script src="<?php echo e(asset('lib/touchSwipe/jquery.touchSwipe.min.js')); ?>" type="text/javascript"></script>
 <!-- Contact Form JavaScript File -->
 <script src="<?php echo e(asset('js/modifyUser.js')); ?>" type="text/javascript"></script>
+<script src="<?php echo e(asset('js/validation.js')); ?>" type="text/javascript"></script>
 
 <!-- Template Main Javascript File -->
 <script src="<?php echo e(asset('js/main.js')); ?>" type="text/javascript"></script>

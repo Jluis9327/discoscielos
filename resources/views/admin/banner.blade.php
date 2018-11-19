@@ -6,12 +6,10 @@
             <header class="section-header">
                 <h3 class="section-title" style="color: white">LISTA DE BANNER</h3>
             </header>
-
             <div class="row portfolio-container">
                 <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
                     <div class="portfolio-wrap">
                         <figure>
-
                             <img src="<?php for ($i = 0; $i < count($banner); $i++){
                             if ($banner[$i]->Type=='Principal' && $banner[$i]->Day=='Jueves'){
                             echo asset('/images/banner/'.$banner[$i]->Route);
