@@ -29,7 +29,7 @@
                                 <td style="color: white">Aforo: <input type="number" value="{{$x->gauging}}" size="2" disabled>
                                     Cantidad de Reservas actualmente: <input type="number" name="quantity" id="quantity" value="{{$x->quantity}}" size="2" disabled></td>
                                 @endforeach
-                                <td style="color: white">Número de Reservas: <input type="text" id="cantidad" name="cantidad" size="2" maxlength="2" onkeyup="fAgrega();" onfocus="disminuir();"></td>
+                                <td style="color: white">Número de Reservas: <input type="text" id="cantidad" name="cantidad" size="2" maxlength="2" onkeypress="return validaNumericos(event)" onkeyup="fAgrega();" onfocus="disminuir();" required></td>
                             </tr>
                     </table>
                     <br>

@@ -18565,3 +18565,18 @@ Did you mean this?
 #30 C:\\wamp64\\www\\disco_laravel\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #31 {main}
 "} 
+[2018-11-19 22:44:37] local.ERROR: Command "serrve" is not defined.
+
+Did you mean this?
+    serve {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"serrve\" is not defined.
+
+Did you mean this?
+    serve at C:\\wamp64\\www\\disco_laravel\\vendor\\symfony\\console\\Application.php:618)
+[stacktrace]
+#0 C:\\wamp64\\www\\disco_laravel\\vendor\\symfony\\console\\Application.php(229): Symfony\\Component\\Console\\Application->find('serrve')
+#1 C:\\wamp64\\www\\disco_laravel\\vendor\\symfony\\console\\Application.php(148): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\wamp64\\www\\disco_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(88): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\wamp64\\www\\disco_laravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(121): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\wamp64\\www\\disco_laravel\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
