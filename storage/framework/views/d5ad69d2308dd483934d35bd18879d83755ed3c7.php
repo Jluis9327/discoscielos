@@ -19,17 +19,18 @@
                     <?php echo e(csrf_field()); ?>
 
                     <table>
-                        <?php $__currentLoopData = $disponible; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $x): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+
                             <tr>
-                                <td><IMG src="<?php echo e(asset('img/zgeneral.png')); ?>"></td>
+                                <td><img src="<?php echo e(asset('img/zgeneral.png')); ?>"></td>
+                                <?php $__currentLoopData = $disponible; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $x): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                                 <input type="hidden" name="id"  value="<?php echo e($x->Id_Pre); ?>">
                                 <input type="hidden" name="dni"  value="<?php echo e($dni); ?>">
                                 <input type="hidden" name="user" value="<?php echo e(Auth::user()->id); ?>">
                                 <td style="color: white">Aforo: <input type="number" value="<?php echo e($x->gauging); ?>" size="2" disabled>
-                                    Quedan: <input type="number" name="quantity" id="quantity" value="<?php echo e($x->quantity); ?>" size="2" disabled></td>
+                                    Cantidad de Reservas actualmente: <input type="number" name="quantity" id="quantity" value="<?php echo e($x->quantity); ?>" size="2" disabled></td>
+                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                                 <td style="color: white">Número de Reservas: <input type="text" id="cantidad" name="cantidad" size="2" maxlength="2" onkeyup="fAgrega();" onfocus="disminuir();"></td>
                             </tr>
-                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </table>
                     <br>
                     Total a pagar:<input type="text" id="total" size="3" name="total" value="0" disabled><br>

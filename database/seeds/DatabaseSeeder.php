@@ -19,5 +19,6 @@ class DatabaseSeeder extends Seeder
         $this->call(BannerTableSeeder::class);
         $this->call(BoxTableSeeder::class);
         $this->call(Box_PresentationTableSeeder::class);
+        $this->call(OneLevel_PresentationTableSeeder::class);
     }
 }

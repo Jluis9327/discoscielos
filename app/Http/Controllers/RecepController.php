@@ -85,18 +85,19 @@ class RecepController extends Controller
             if ($v->fails()) {
                 return redirect()->back()->withInput()->withErrors($v->errors());
             } else {
+                //dd("hola");
                 $objuser = new User();
                 $objuser->DNI = $dni;
                 $objuser->name = $request->name;
                 $objuser->surname = $request->surname;
                 $objuser->phone = $request->phone;
                 $objuser->email = $request->email;
-                $objuser->password = bcrypt($request->pass);
+                $objuser->password = bcrypt($request->password);
                 $objuser->Id_Rol = 3;
                 $objuser->Id_Est = 1;
                 $save = $objuser->save();
                 $dni = $request->dni;
-                return redirect('/recep/zone/'. $dni);
+                return redirect('/recep/zone/'. $id);
             }
         }
         else{

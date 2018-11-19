@@ -2,12 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a0aa00e-8034-4edf-89ee-bd95e9d04c3b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RecepController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RecepController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/recepcionist/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/recepcionist/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/qlGjqR9hPUltN7V8tJo1VP6aUCkFmX6f3WSvBsmh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/86bbd70c057f9b0d051309e9fa6fa9a31dd06431.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/86bbd70c057f9b0d051309e9fa6fa9a31dd06431.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/cache/packages.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/cache/packages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/cache/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/cache/services.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/recepcionist/first.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/recepcionist/first.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/0N2lrl1jlUFrHCnpRTg4ayzTKoGziMXS7ATEBEro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/1bXfLsg811fdksTGUIYOyFbUpYkODTcJvhf6M2nC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/7L97xZHSsICXlMig9YCVqA8GoiofLktZjk9tiuBF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/9fhRNXP7aG6AEONSXdDnWNUuf9NbDVQliEYzLxnt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/Daz4F8J3Hd7lK05zTyfMtwjCN9vdSURlFygETTnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/H7esBiAZvgRu32zyGPPYbH31UmWMhG17j4vlxckZ" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/HLx7xBWcj91MPIZH1Eumbl4MpvdaArNj1Okqq0Gs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/HzsGcSHK1t27J62VjXrtxRTZDTjpo9X2dNgDorGi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/IH4YZZKPFKd26q7FDxhKMy0O9XkieZKYtKg4RgVH" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/KXBeBKM75Y3lHg3HT8ZOaOVTnKvfpnODagw9I2Ek" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/PUBbUir1wXwpYtGlqjtWsdS6HnPnXKKiYbTracGf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/TK0SgxWBizvYyGsiCHv1O0sF01B4CPsnsGaS3kC4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/ThJUW9GKNUhPppcZN4EAkvcnFooU0MMwSOyC3Vz9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/Xhd1voWBBLXjHdYYhtcWYOI69iqO6bJk1b54A7po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/fJvsjRLSeugo3bR9vrj7odqFiVnnGcuu4NebHeoF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/fkFGDouXcyazgcezWQhOLHZw34DjXEHDxKybmcJI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/pwqamLNITqG7LD0mDY9855L84by88MPEtc1Yfsw4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/tG8nVMIvg5pTrYLCfEzd2F9EAfykAtIoDJPKB2CX" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/sessions/tG8nVMIvg5pTrYLCfEzd2F9EAfykAtIoDJPKB2CX" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/tRxvdEsU612iKilJnkz9SyexmZsjXGHQsYbUtu5y" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/w0IIL1r1luI8QKgRcTv5I3QYj5UB6wm5tQCtPHuw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/xImDyDvklruL1EDmKRPidQYaH6xJkuRy8Uwmi9UQ" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/d5ad69d2308dd483934d35bd18879d83755ed3c7.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/d5ad69d2308dd483934d35bd18879d83755ed3c7.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,28 +62,30 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="html" value="1" />
           <entry key="js" value="5" />
-          <entry key="php" value="129" />
+          <entry key="php" value="144" />
           <entry key="pruebasdisco" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Blade" value="61" />
+          <entry key="Blade" value="63" />
+          <entry key="HTML" value="1" />
           <entry key="JavaScript" value="5" />
-          <entry key="PHP" value="68" />
+          <entry key="PHP" value="81" />
           <entry key="UNKNOWN" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="php" value="9736" />
+          <entry key="php" value="9949" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Blade" value="5045" />
-          <entry key="PHP" value="4691" />
+          <entry key="Blade" value="5104" />
+          <entry key="PHP" value="4845" />
         </counts>
       </usages-collector>
     </session>
@@ -107,63 +136,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
+            <state relative-caret-position="52">
               <caret line="35" column="62" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RecepController.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/recepcionist/first.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="75" column="31" selection-start-line="75" selection-start-column="31" selection-end-line="75" selection-end-column="31" />
-              <folding>
-                <element signature="e#40#52#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="253">
+              <caret line="29" column="68" selection-start-line="29" selection-start-column="68" selection-end-line="29" selection-end-column="68" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/recepcionist/register.blade.php">
+        <entry file="file://$PROJECT_DIR$/database/seeds/OneLevel_PresentationTableSeeder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="19" column="281" selection-start-line="19" selection-start-column="281" selection-end-line="19" selection-end-column="281" />
+            <state relative-caret-position="23">
+              <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
               <folding>
-                <element signature="e#191#211#0#HTML" expanded="true" />
-                <element signature="e#247#295#0#HTML" expanded="true" />
-                <element signature="e#457#477#0#HTML" expanded="true" />
-                <element signature="e#920#991#0#HTML" expanded="true" />
-                <element signature="e#1699#1770#0#HTML" expanded="true" />
-                <element signature="e#2410#2481#0#HTML" expanded="true" />
-                <element signature="e#3147#3218#0#HTML" expanded="true" />
-                <element signature="e#3970#4041#0#HTML" expanded="true" />
-                <element signature="e#4693#4764#0#HTML" expanded="true" />
-                <element signature="e#6616#6639#0#HTML" expanded="true" />
-                <element signature="e#6652#6700#0#HTML" expanded="true" />
+                <element signature="e#7#38#0#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="59" column="60" selection-start-line="53" selection-start-column="15" selection-end-line="59" selection-end-column="60" />
-              <folding>
-                <element signature="e#45#58#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/recepcionist/search.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="878">
-              <caret line="109" column="13" selection-start-line="109" selection-start-column="13" selection-end-line="109" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -190,7 +185,6 @@
         <option value="$PROJECT_DIR$/database/seeds/PresentationTableSeeder.php" />
         <option value="$PROJECT_DIR$/resources/views/recepcionist/zone.blade.php" />
         <option value="$PROJECT_DIR$/database/seeds/BoxTableSeeder.php" />
-        <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
         <option value="$PROJECT_DIR$/app/Box_Presentation.php" />
         <option value="$PROJECT_DIR$/database/seeds/TypeTableSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/StateTableSeeder.php" />
@@ -198,7 +192,6 @@
         <option value="$PROJECT_DIR$/resources/views/recepcionist/confirm.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/recepcionist/second.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/resources/views/recepcionist/first.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/register.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/banner.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" />
@@ -210,6 +203,9 @@
         <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/resources/views/recepcionist/register.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/RecepController.php" />
+        <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
+        <option value="$PROJECT_DIR$/database/seeds/OneLevel_PresentationTableSeeder.php" />
+        <option value="$PROJECT_DIR$/resources/views/recepcionist/first.blade.php" />
       </list>
     </option>
   </component>
@@ -329,51 +325,13 @@
             <path>
               <item name="disco_laravel" type="b2602c69:ProjectViewProjectNode" />
               <item name="disco_laravel" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="disco_laravel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="disco_laravel" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="disco_laravel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="disco_laravel" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="Auth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="disco_laravel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="disco_laravel" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="disco_laravel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="disco_laravel" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="factories" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="disco_laravel" type="b2602c69:ProjectViewProjectNode" />
               <item name="disco_laravel" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
               <item name="seeds" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="disco_laravel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="disco_laravel" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="disco_laravel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="disco_laravel" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="disco_laravel" type="b2602c69:ProjectViewProjectNode" />
@@ -399,6 +357,13 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="disco_laravel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="disco_laravel" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="disco_laravel" type="b2602c69:ProjectViewProjectNode" />
@@ -479,12 +444,12 @@
       <workItem from="1542411969492" duration="2960000" />
       <workItem from="1542560100302" duration="5622000" />
       <workItem from="1542586709034" duration="12649000" />
-      <workItem from="1542638576908" duration="21068000" />
+      <workItem from="1542638576908" duration="23914000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163370000" />
+    <option name="totallyTimeSpent" value="166216000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -499,7 +464,7 @@
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49725273" visible="true" weight="0.22277936" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49725273" visible="true" weight="0.22277936" />
       <window_info id="Structure" order="1" sideWeight="0.50274724" side_tool="true" weight="0.22277936" />
       <window_info id="Favorites" order="2" sideWeight="0.5007236" side_tool="true" weight="0.25302014" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -512,7 +477,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.48997134" weight="0.33241758" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.48997134" visible="true" weight="0.33241758" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.51002866" side_tool="true" weight="0.33241758" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -527,36 +492,12 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/client/zone.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Type.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="298" column="20" selection-start-line="298" selection-start-column="20" selection-end-line="298" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Redirector.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="151" column="31" lean-forward="true" selection-start-line="151" selection-start-column="31" selection-end-line="151" selection-end-column="31" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/BannerTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/modifyUser.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -569,20 +510,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/PresentationTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/UserTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="33" column="11" lean-forward="true" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -611,24 +538,10 @@
         <state relative-caret-position="-207" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="20" column="49" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Box_Presentation.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/BoxTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2373">
-          <caret line="110" column="18" selection-start-line="110" selection-start-column="18" selection-end-line="110" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -650,13 +563,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="10" column="76" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/Box_PresentationTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="315" selection-start-line="315" selection-end-line="315" />
         </state>
       </provider>
     </entry>
@@ -690,13 +596,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="7" column="89" selection-start-line="7" selection-start-column="89" selection-end-line="7" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/recepcionist/first.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1196">
-          <caret line="52" column="8" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -788,13 +687,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="35" column="62" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="501">
@@ -839,16 +731,6 @@
     <entry file="file://$PROJECT_DIR$/app/Role.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="59" column="60" selection-start-line="53" selection-start-column="15" selection-end-line="59" selection-end-column="60" />
-          <folding>
-            <element signature="e#45#58#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/recepcionist/register.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -869,13 +751,108 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Desktop/dicotecaphp/Links/primernivel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="81" column="24" lean-forward="true" selection-start-line="81" selection-start-column="24" selection-end-line="81" selection-end-column="24" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#4068#4146#0" />
+            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="59" column="60" selection-start-line="53" selection-start-column="15" selection-end-line="59" selection-end-column="60" />
+          <folding>
+            <element signature="e#45#58#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_11_13_044949_create_onelevel__presentations_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="21" column="52" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/UserTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="33" column="11" lean-forward="true" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/Box_PresentationTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7061">
+          <caret line="308" column="8" lean-forward="true" selection-start-line="308" selection-start-column="8" selection-end-line="312" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/BannerTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="23" column="26" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/BoxTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2484">
+          <caret line="109" column="8" lean-forward="true" selection-start-line="109" selection-start-column="8" selection-end-line="113" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/PresentationTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RecepController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="75" column="31" selection-start-line="75" selection-start-column="31" selection-end-line="75" selection-end-column="31" />
+        <state relative-caret-position="-1109">
+          <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
           <folding>
             <element signature="e#40#52#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="35" column="62" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/OneLevel_PresentationTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+          <folding>
+            <element signature="e#7#38#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/recepcionist/first.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="29" column="68" selection-start-line="29" selection-start-column="68" selection-end-line="29" selection-end-column="68" />
         </state>
       </provider>
     </entry>

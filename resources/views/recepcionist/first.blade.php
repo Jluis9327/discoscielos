@@ -19,17 +19,18 @@
                 <form class="form-horizontal" method="POST" action="{{url('/recep/zone/firstlevel/reservation/')}}" enctype="multipart/form-data">
                     {{csrf_field()}}
                     <table>
-                        @foreach($disponible as $x)
+
                             <tr>
-                                <td><IMG src="{{asset('img/zgeneral.png')}}"></td>
+                                <td><img src="{{asset('img/zgeneral.png')}}"></td>
+                                @foreach($disponible as $x)
                                 <input type="hidden" name="id"  value="{{$x->Id_Pre}}">
                                 <input type="hidden" name="dni"  value="{{$dni}}">
                                 <input type="hidden" name="user" value="{{Auth::user()->id}}">
                                 <td style="color: white">Aforo: <input type="number" value="{{$x->gauging}}" size="2" disabled>
-                                    Quedan: <input type="number" name="quantity" id="quantity" value="{{$x->quantity}}" size="2" disabled></td>
+                                    Cantidad de Reservas actualmente: <input type="number" name="quantity" id="quantity" value="{{$x->quantity}}" size="2" disabled></td>
+                                @endforeach
                                 <td style="color: white">Número de Reservas: <input type="text" id="cantidad" name="cantidad" size="2" maxlength="2" onkeyup="fAgrega();" onfocus="disminuir();"></td>
                             </tr>
-                        @endforeach
                     </table>
                     <br>
                     Total a pagar:<input type="text" id="total" size="3" name="total" value="0" disabled><br>
