@@ -129,11 +129,11 @@ class RecepController extends Controller
         foreach ($clien as $cliente){
             $idcli=$cliente['id'];
         }
-        if($cantidad!=""){
+        if($cantidad!="" && $cantidad<=60){
             //---------RESERVATION-----------
             $objReserva = new Reservation();
             $objReserva->Date=$fecha;
-            $objReserva->Id_Est=6;
+            $objReserva->Id_Est=5;
             $objReserva->Id_U=$iduser;
             $objReserva->Id_Cli=$idcli;
             $objReserva->Total=$cantidad*25;
@@ -146,7 +146,7 @@ class RecepController extends Controller
             $objone= new Onelevel();
             $objone->Id_Re=$idreservation;
             $objone->quantity=$cantidad;
-            $objone->total=$cantidad*20;
+            $objone->total=$cantidad*25;
             $objone->Id_pre=$id;
             $objone->save();
             //-----------ONELEVEL PRESENTATION--------------
@@ -189,32 +189,38 @@ class RecepController extends Controller
     public function secondday(Request $request,$dni,$date)
     {
         //dd(Auth::user()->id);
-        $reservation=new Reservation();
-        $reservation->Date=$date;
-        $reservation->Id_Est=5;
-        $reservation->Id_U=Auth::user()->id;
-        $user=User::where('DNI','=',$dni)->get();
-        $reservation->Id_Cli=$user[0]->id;
-        $reservation->Total=$request->total;
-        $reservation->save();
-        $box=Box::all();
-        foreach ($box as $item)
-        {
-            if($request[$item['Cod_Bo']]!==null)
+        $total=$request->total;
+        if($total!=0){
+            $reservation=new Reservation();
+            $reservation->Date=$date;
+            $reservation->Id_Est=5;
+            $reservation->Id_U=Auth::user()->id;
+            $user=User::where('DNI','=',$dni)->get();
+            $reservation->Id_Cli=$user[0]->id;
+            $reservation->Total=$request->total;
+            $reservation->save();
+            $box=Box::all();
+            foreach ($box as $item)
             {
-                $twolevel_box=new Twolevel_Box();
-                $twolevel_box->Id_Bo=$item['Id_Bo'];
-                $reservation1=Reservation::orderBy('Id_Re','desc')->limit(1)->get();
-                foreach ($reservation1 as $item2)
+                if($request[$item['Cod_Bo']]!==null)
                 {
-                    $twolevel_box->Id_Re=$item2['Id_Re'];
-                    $presentation=Presentation::where('Date','=',$date)->get();
-                    Box_Presentation::where('Id_Bo','=',$item['Id_Bo'])->where('Id_Pre','=',$presentation[0]->Id_Pre)->update(['Id_Est' => 5]);
+                    $twolevel_box=new Twolevel_Box();
+                    $twolevel_box->Id_Bo=$item['Id_Bo'];
+                    $reservation1=Reservation::orderBy('Id_Re','desc')->limit(1)->get();
+                    foreach ($reservation1 as $item2)
+                    {
+                        $twolevel_box->Id_Re=$item2['Id_Re'];
+                        $presentation=Presentation::where('Date','=',$date)->get();
+                        Box_Presentation::where('Id_Bo','=',$item['Id_Bo'])->where('Id_Pre','=',$presentation[0]->Id_Pre)->update(['Id_Est' => 5]);
+                    }
+                    $twolevel_box->save();
                 }
-                $twolevel_box->save();
             }
+            return redirect('/recep/zone/secondlevel/'.$dni.'/day/'.$date.'/confirm');
         }
-        return redirect('/recep/zone/secondlevel/'.$dni.'/day/'.$date.'/confirm');
+       else{
+           return redirect('/recep/zone/secondlevel/'.$dni.'/day/'.$date);
+       }
     }
     public function confirmindex($dni,$date)
     {

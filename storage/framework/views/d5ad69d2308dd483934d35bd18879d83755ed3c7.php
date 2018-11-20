@@ -37,7 +37,7 @@
                                 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                         </tr>
                         <tr>
-                                <td style="color: white; text-align: center">Número de Reservas: <input type="text" id="cantidad" name="cantidad" size="2" maxlength="2" onkeypress="return validaNumericos(event)" onkeyup="fAgrega();" onfocus="disminuir();" required></td>
+                                <td style="color: white; text-align: center">Número de Reservas: <input type="text" id="cantidad" name="cantidad" size="2" maxlength="2" onkeypress="return validaNumericos(event)" onkeyup="fAgrega();"  required></td>
                             </tr>
                     </table>
                     <br>
