@@ -15,19 +15,19 @@ class OneLevel_PresentationTableSeeder extends Seeder
         $fecha = date('Y/m/d');
         Onelevel_Presentation::create([
             'gauging'=>60,
-            'quantity'=>0,
+            'quantity'=>60,
             'Date'=>$fecha,
             'Id_Pre'=>1,
         ]);
         Onelevel_Presentation::create([
             'gauging'=>60,
-            'quantity'=>0,
+            'quantity'=>60,
             'Date'=>$fecha,
             'Id_Pre'=>2,
         ]);
         Onelevel_Presentation::create([
             'gauging'=>60,
-            'quantity'=>0,
+            'quantity'=>60,
             'Date'=>$fecha,
             'Id_Pre'=>3,
         ]);

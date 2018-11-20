@@ -111,7 +111,7 @@ class AdminController extends Controller
             }
             $onelevel_presentation=new Onelevel_Presentation();
             $onelevel_presentation->gauging=60;
-            $onelevel_presentation->quantity=0;
+            $onelevel_presentation->quantity=60;//cambio era 0
             $onelevel_presentation->Date=$fechax;
             $onelevel_presentation->Id_Pre=$presentation1[0]->Id_Pre;
             $onelevel_presentation->save();

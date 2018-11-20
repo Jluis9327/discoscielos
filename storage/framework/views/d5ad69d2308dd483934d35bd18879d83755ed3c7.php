@@ -33,7 +33,7 @@
                                 <input type="hidden" name="dni"  value="<?php echo e($dni); ?>">
                                 <input type="hidden" name="user" value="<?php echo e(Auth::user()->id); ?>">
                                 <td style="color: white; text-align: center">Aforo: <input type="number" style="background-color: transparent; border: transparent" value="<?php echo e($x->gauging); ?>" size="2" disabled>
-                                    Cantidad de Reservas actualmente: <input type="number" style="background-color: transparent; border: transparent" name="quantity" id="quantity" value="<?php echo e($x->quantity); ?>" size="2" disabled></td>
+                                    Quedan disponibles: <input type="number" style="background-color: transparent; border: transparent" name="quantity" id="quantity" value="<?php echo e($x->quantity); ?>" size="2" disabled></td>
                                 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                         </tr>
                         <tr>
