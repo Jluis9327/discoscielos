@@ -1,14 +1,14 @@
 <?php $__env->startSection('content'); ?>
     <section id="testimonials" class="section-bg wow ">
         <div class="container">
-            <br><br><br>
+            <br>
             <header class="section-header">
-                <h3 style="color: white">UBICACIONES - SEGUNDO NIVEL</h3>
+                <h3 style="color: white">ZONA BOX - SEGUNDO NIVEL</h3>
             </header>
             <center>
                 <div class="form-group">
-                    <label for="días" class="col-form-label" aria-disabled="true">Seleccione el día</label><br>
-                    <select id="xs" onchange="javascript:handleSelect(this)">
+                    <div class="col-sm-4">
+                    <select class="form-control" id="xs" onchange="javascript:handleSelect(this)">
                         <option disabled>Escoge una fecha</option>
                         <?php for($i = 2; $i>=0 ; $i--): ?>
                             <?php if($presentation[$i]->Date==$date): ?>
@@ -18,6 +18,7 @@
                             <?php endif; ?>
                         <?php endfor; ?>
                     </select>
+                    </div>
                 </div>
                 <form id="formulario" action="<?php echo e(url('/recep/zone/secondlevel/'.$dni.'/day/'.$date)); ?>" method="POST" enctype="multipart/form-data">
                     <?php echo e(csrf_field()); ?>
@@ -62,7 +63,7 @@
                             <td style="background-color: #18d26e;color: black"><input type="checkbox" value="600" size="5" name="L1" id="L1" onclick="totales('#L1')" <?php for ($i=0;$i<count($boxes);$i++){if($boxes[$i]->box->Cod_Bo=="L1"){if($boxes[$i]->Id_Est=="3"){}elseif($boxes[$i]->Id_Est=="4"){echo "disabled checked";}elseif ($boxes[$i]->Id_Est=="5"){echo "disabled checked";}}}?>> L1 - 600</td>
                         </tr>
                     </table>
-                    <br><br>
+                    <br>
                     <table>
                         <tr>
                             <td style="background-color: #ffc107;color: black" width="40"></td>
@@ -78,9 +79,9 @@
                         </tr>
                     </table>
                     <br>
+                    TOTAL A PAGAR:<input type="text" style="background-color: transparent; border: transparent; text-align: center; color: white" size="3" id="total0" name="total" value="0"> NUEVOS SOLES
                     <br>
-                    <button class='btn btn-primary' type="submit">CONTINUAR</button>
-                    Total a pagar:<input type="text" id="total0" name="total" value="0">
+                    <button class='btn btn-outline-success' type="submit">CONTINUAR</button>
                 </form>
 
 

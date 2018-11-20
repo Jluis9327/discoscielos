@@ -1,39 +1,43 @@
 <?php $__env->startSection('content'); ?>
     <section id="testimonials" class="section-bg wow ">
         <div class="container">
-            <br><br>
+            <br>
             <header class="section-header">
                 <h3 style="color: white">ZONA GENERAL - PRIMER NIVEL </h3>
             </header>
             <center>
                 <div class="form-group">
-                    <label for="días" class="col-form-label" aria-disabled="true">Seleccione el día</label><br>
-                    <select id="xs" onchange="javascript:handleSelect(this)">
+                    <div class="col-sm-4">
+                    <select class="form-control" id="xs" onchange="javascript:handleSelect(this)">
                         <option>Escoge una fecha</option>
                         <?php for($i = 2; $i>=0 ; $i--): ?>
                             <option value="<?php echo e(url('/recep/zone/firstlevel/'.$dni.'/day/'.$presentation[$i]->Date)); ?>"><?php echo e($presentation[$i]->Date); ?></option>
                         <?php endfor; ?>
                     </select>
+                    </div>
                 </div>
                 <form class="form-horizontal" method="POST" action="<?php echo e(url('/recep/zone/firstlevel/reservation/')); ?>" enctype="multipart/form-data">
                     <?php echo e(csrf_field()); ?>
 
                     <table>
-
                             <tr>
                                 <td><img src="<?php echo e(asset('img/zgeneral.png')); ?>"></td>
+                            </tr>
+                        <tr>
                                 <?php $__currentLoopData = $disponible; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $x): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                                 <input type="hidden" name="id"  value="<?php echo e($x->Id_Pre); ?>">
                                 <input type="hidden" name="dni"  value="<?php echo e($dni); ?>">
                                 <input type="hidden" name="user" value="<?php echo e(Auth::user()->id); ?>">
-                                <td style="color: white">Aforo: <input type="number" value="<?php echo e($x->gauging); ?>" size="2" disabled>
-                                    Cantidad de Reservas actualmente: <input type="number" name="quantity" id="quantity" value="<?php echo e($x->quantity); ?>" size="2" disabled></td>
+                                <td style="color: white; text-align: center">Aforo: <input type="number" style="background-color: transparent; border: transparent" value="<?php echo e($x->gauging); ?>" size="2" disabled>
+                                    Cantidad de Reservas actualmente: <input type="number" style="background-color: transparent; border: transparent" name="quantity" id="quantity" value="<?php echo e($x->quantity); ?>" size="2" disabled></td>
                                 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                                <td style="color: white">Número de Reservas: <input type="text" id="cantidad" name="cantidad" size="2" maxlength="2" onkeypress="return validaNumericos(event)" onkeyup="fAgrega();" onfocus="disminuir();"></td>
+                        </tr>
+                        <tr>
+                                <td style="color: white; text-align: center">Número de Reservas: <input type="text" id="cantidad" name="cantidad" size="2" maxlength="2" onkeypress="return validaNumericos(event)" onkeyup="fAgrega();" onfocus="disminuir();" required></td>
                             </tr>
                     </table>
                     <br>
-                    Total a pagar:<input type="text" id="total" size="3" name="total" value="0" disabled><br>
+                    TOTAL A PAGAR: <input type="text" style="background-color: transparent; border: transparent; text-align: center; color: white" id="total" size="3" name="total" value="0" disabled> NUEVOS SOLES<br>
                     <button  class="btn btn-outline-success" data-toggle='modal' data-target='#pk-modal' onclick="click" value="RESERVAR">CONTINUAR</button>
                 </form>
                 <br>

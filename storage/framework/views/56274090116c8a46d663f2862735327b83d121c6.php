@@ -79,7 +79,7 @@
             <div class="container">
 
                 <header class="section-header">
-                    <h3>DISFRUTA EL MEJOR FIN DE SEMANA</h3>
+                    <h3 style="color: white">DISFRUTA EL MEJOR FIN DE SEMANA</h3>
                 </header>
 
                 <div class="row about-cols">
@@ -94,12 +94,12 @@
                                 }
                                 ?>" alt="" class="img-fluid">
                             </div>
-                            <h2 class="title"><a href="#">JUEVES 13 - YO SOY MALUMA</a></h2>
+                            <h2 class="title"><a href="#">JUEVES - REGGAETONEANDO</a></h2>
                             <p>
-                                ZONA GENERAL: S/15.00<br>
-                                BOX 2 + COMBO DOUBLE BLACK: S/.200 <br>
-                                BOX 4 + COMBO BLACK LABEL: S/.200 <br>
-                                BOX 6 + COMBO GOLD LABEL: S/.300
+                                ZONA GENERAL + CORCHO LIBRE: S/25.00<br>
+                                BOX 2 + COMBO DOUBLE BLACK: S/.500 <br>
+                                BOX 4 + COMBO BLACK LABEL: S/.400 <br>
+                                BOX 6 + COMBO GOLD LABEL: S/.600
                             </p>
                         </div>
                     </div>
@@ -114,12 +114,12 @@
                                 }
                                 ?>" alt="" class="img-fluid">
                             </div>
-                            <h2 class="title"><a href="#">VIERNES 14 - ROCK CON LIBIDO</a></h2>
+                            <h2 class="title"><a href="#">VIERNES - ROCKEAMOS</a></h2>
                             <p>
-                                ZONA GENERAL: S/20.00<br>
-                                BOX 2 + COMBO DOUBLE BLACK: S/.300 <br>
-                                BOX 4 + COMBO BLACK LABEL: S/.300 <br>
-                                BOX 6 + COMBO GOLD LABEL: S/.500
+                                ZONA GENERAL + TRAGO LIBRE: S/25.00<br>
+                                BOX 2 + COMBO DOUBLE BLACK: S/.500 <br>
+                                BOX 4 + COMBO BLACK LABEL: S/.400 <br>
+                                BOX 6 + COMBO GOLD LABEL: S/.600
                             </p>
                         </div>
                     </div>
@@ -134,10 +134,10 @@
                                 }
                                 ?>" alt="" class="img-fluid">
                             </div>
-                            <h2 class="title"><a href="#">SABADO 15 - JUERGA Y BARETO</a></h2>
+                            <h2 class="title"><a href="#">SABADO - JUERGA SIN PARAR</a></h2>
                             <p>
                                 ZONA GENERAL: S/25.00<br>
-                                BOX 2 + COMBO DOUBLE BLACK: S/.400 <br>
+                                BOX 2 + COMBO DOUBLE BLACK: S/.500 <br>
                                 BOX 4 + COMBO BLACK LABEL: S/.400 <br>
                                 BOX 6 + COMBO GOLD LABEL: S/.600
                             </p>
@@ -213,17 +213,15 @@
                     <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
                         <div class="portfolio-wrap">
                             <figure>
-                                <img src="<?php echo e(asset('img/portfolio/app1.jpg')); ?>" class="img-fluid" alt="">
-                                <a href="<?php echo e(asset('img/portfolio/app1.jpg')); ?>" data-lightbox="portfolio"
-                                   data-title="App 1" class="link-preview" title="Preview"><i
+                                <img src="<?php echo e(asset('img/portfolio/General1.jpg')); ?>" class="img-fluid" alt="">
+                                <a href="<?php echo e(asset('img/portfolio/General1.jpg')); ?>" data-lightbox="portfolio"
+                                   data-title="Zona General" class="link-preview" title="Preview"><i
                                             class="ion ion-eye"></i></a>
-                                <a href="#" class="link-details" title="More Details"><i
-                                            class="ion ion-android-open"></i></a>
                             </figure>
 
                             <div class="portfolio-info">
-                                <h4><a href="#">App 1</a></h4>
-                                <p>App</p>
+                                <h4><a href="#">Zona General</a></h4>
+                                <p>Invita a todos tus amigos</p>
                             </div>
                         </div>
                     </div>
@@ -231,17 +229,15 @@
                     <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
                         <div class="portfolio-wrap">
                             <figure>
-                                <img src="<?php echo e(asset('img/portfolio/web3.jpg')); ?>" class="img-fluid" alt="">
-                                <a href="<?php echo e(asset('img/portfolio/web3.jpg')); ?>" class="link-preview"
-                                   data-lightbox="portfolio" data-title="Web 3" title="Preview"><i
+                                <img src="<?php echo e(asset('img/portfolio/escenario3.png')); ?>" class="img-fluid" alt="">
+                                <a href="<?php echo e(asset('img/portfolio/escenario3.png')); ?>" class="link-preview"
+                                   data-lightbox="portfolio" data-title="Escenario" title="Preview"><i
                                             class="ion ion-eye"></i></a>
-                                <a href="#" class="link-details" title="More Details"><i
-                                            class="ion ion-android-open"></i></a>
                             </figure>
 
                             <div class="portfolio-info">
-                                <h4><a href="#">Web 3</a></h4>
-                                <p>Web</p>
+                                <h4><a href="#">Escenario</a></h4>
+                                <p>Goza de una noche inolvidable</p>
                             </div>
                         </div>
                     </div>
@@ -249,17 +245,15 @@
                     <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
                         <div class="portfolio-wrap">
                             <figure>
-                                <img src="<?php echo e(asset('img/portfolio/app2.jpg')); ?>" class="img-fluid" alt="">
-                                <a href="<?php echo e(asset('img/portfolio/app2.jpg')); ?>" class="link-preview"
-                                   data-lightbox="portfolio" data-title="App 2" title="Preview"><i
+                                <img src="<?php echo e(asset('img/portfolio/General2.jpg')); ?>" class="img-fluid" alt="">
+                                <a href="<?php echo e(asset('img/portfolio/General2.jpg')); ?>" class="link-preview"
+                                   data-lightbox="portfolio" data-title="Zona General" title="Preview"><i
                                             class="ion ion-eye"></i></a>
-                                <a href="#" class="link-details" title="More Details"><i
-                                            class="ion ion-android-open"></i></a>
                             </figure>
 
                             <div class="portfolio-info">
-                                <h4><a href="#">App 2</a></h4>
-                                <p>App</p>
+                                <h4><a href="#">Zona General</a></h4>
+                                <p>Los mejores tragos solo aqui</p>
                             </div>
                         </div>
                     </div>
@@ -267,17 +261,15 @@
                     <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
                         <div class="portfolio-wrap">
                             <figure>
-                                <img src="<?php echo e(asset('img/portfolio/card2.jpg')); ?>" class="img-fluid" alt="">
-                                <a href="<?php echo e(asset('img/portfolio/card2.jpg')); ?>" class="link-preview"
-                                   data-lightbox="portfolio" data-title="Card 2" title="Preview"><i
+                                <img src="<?php echo e(asset('img/portfolio/segundazona2.png')); ?>" class="img-fluid" alt="">
+                                <a href="<?php echo e(asset('img/portfolio/segundazona2.png')); ?>" class="link-preview"
+                                   data-lightbox="portfolio" data-title="Zona Box" title="Preview"><i
                                             class="ion ion-eye"></i></a>
-                                <a href="#" class="link-details" title="More Details"><i
-                                            class="ion ion-android-open"></i></a>
                             </figure>
 
                             <div class="portfolio-info">
-                                <h4><a href="#">Card 2</a></h4>
-                                <p>Card</p>
+                                <h4><a href="#">Zona Box</a></h4>
+                                <p>Confort y diversion</p>
                             </div>
                         </div>
                     </div>
@@ -285,17 +277,15 @@
                     <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
                         <div class="portfolio-wrap">
                             <figure>
-                                <img src="<?php echo e(asset('img/portfolio/web2.jpg')); ?>" class="img-fluid" alt="">
-                                <a href="<?php echo e(asset('img/portfolio/web2.jpg')); ?>" class="link-preview"
-                                   data-lightbox="portfolio" data-title="Web 2" title="Preview"><i
+                                <img src="<?php echo e(asset('img/portfolio/escenario2.jpg')); ?>" class="img-fluid" alt="">
+                                <a href="<?php echo e(asset('img/portfolio/escenario2.jpg')); ?>" class="link-preview"
+                                   data-lightbox="portfolio" data-title="Escenario" title="Preview"><i
                                             class="ion ion-eye"></i></a>
-                                <a href="#" class="link-details" title="More Details"><i
-                                            class="ion ion-android-open"></i></a>
                             </figure>
 
                             <div class="portfolio-info">
-                                <h4><a href="#">Web 2</a></h4>
-                                <p>Web</p>
+                                <h4><a href="#">Escenario</a></h4>
+                                <p>El mejor sistema de sonido</p>
                             </div>
                         </div>
                     </div>
@@ -303,17 +293,15 @@
                     <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
                         <div class="portfolio-wrap">
                             <figure>
-                                <img src="<?php echo e(asset('img/portfolio/app3.jpg')); ?>" class="img-fluid" alt="">
-                                <a href="<?php echo e(asset('img/portfolio/app3.jpg')); ?>" class="link-preview"
-                                   data-lightbox="portfolio" data-title="App 3" title="Preview"><i
+                                <img src="<?php echo e(asset('img/portfolio/General3.png')); ?>" class="img-fluid" alt="">
+                                <a href="<?php echo e(asset('img/portfolio/General3.png')); ?>" class="link-preview"
+                                   data-lightbox="portfolio" data-title="Zona General" title="Preview"><i
                                             class="ion ion-eye"></i></a>
-                                <a href="#" class="link-details" title="More Details"><i
-                                            class="ion ion-android-open"></i></a>
                             </figure>
 
                             <div class="portfolio-info">
-                                <h4><a href="#">App 3</a></h4>
-                                <p>App</p>
+                                <h4><a href="#">Zona General</a></h4>
+                                <p>La mejor juerga sin parar</p>
                             </div>
                         </div>
                     </div>
@@ -321,17 +309,15 @@
                     <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
                         <div class="portfolio-wrap">
                             <figure>
-                                <img src="<?php echo e(asset('img/portfolio/card1.jpg')); ?>" class="img-fluid" alt="">
-                                <a href="<?php echo e(asset('img/portfolio/card1.jpg')); ?>" class="link-preview"
-                                   data-lightbox="portfolio" data-title="Card 1" title="Preview"><i
+                                <img src="<?php echo e(asset('img/portfolio/segundazona1.jpg')); ?>" class="img-fluid" alt="">
+                                <a href="<?php echo e(asset('img/portfolio/segundazona1.jpg')); ?>" class="link-preview"
+                                   data-lightbox="portfolio" data-title="Zona Box" title="Preview"><i
                                             class="ion ion-eye"></i></a>
-                                <a href="#" class="link-details" title="More Details"><i
-                                            class="ion ion-android-open"></i></a>
                             </figure>
 
                             <div class="portfolio-info">
-                                <h4><a href="#">Card 1</a></h4>
-                                <p>Card</p>
+                                <h4><a href="#">Zona Box</a></h4>
+                                <p>Reserva con anticipacion</p>
                             </div>
                         </div>
                     </div>
@@ -339,17 +325,15 @@
                     <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp" data-wow-delay="0.1s">
                         <div class="portfolio-wrap">
                             <figure>
-                                <img src="<?php echo e(asset('img/portfolio/card3.jpg')); ?>" class="img-fluid" alt="">
-                                <a href="<?php echo e(asset('img/portfolio/card3.jpg')); ?>" class="link-preview"
-                                   data-lightbox="portfolio" data-title="Card 3" title="Preview"><i
+                                <img src="<?php echo e(asset('img/portfolio/segundazona3.jpg')); ?>" class="img-fluid" alt="">
+                                <a href="<?php echo e(asset('img/portfolio/segundazona3.jpg')); ?>" class="link-preview"
+                                   data-lightbox="portfolio" data-title="Zona Box" title="Preview"><i
                                             class="ion ion-eye"></i></a>
-                                <a href="#" class="link-details" title="More Details"><i
-                                            class="ion ion-android-open"></i></a>
                             </figure>
 
                             <div class="portfolio-info">
-                                <h4><a href="#">Card 3</a></h4>
-                                <p>Card</p>
+                                <h4><a href="#">Zona Box</a></h4>
+                                <p>Las mejores promociones</p>
                             </div>
                         </div>
                     </div>
@@ -357,17 +341,15 @@
                     <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.2s">
                         <div class="portfolio-wrap">
                             <figure>
-                                <img src="<?php echo e(asset('img/portfolio/web1.jpg')); ?>" class="img-fluid" alt="">
-                                <a href="<?php echo e(asset('img/portfolio/web1.jpg')); ?>" class="link-preview"
-                                   data-lightbox="portfolio" data-title="Web 1" title="Preview"><i
+                                <img src="<?php echo e(asset('img/portfolio/escenario1.jpg')); ?>" class="img-fluid" alt="">
+                                <a href="<?php echo e(asset('img/portfolio/escenario1.jpg')); ?>" class="link-preview"
+                                   data-lightbox="portfolio" data-title="Escenario" title="Preview"><i
                                             class="ion ion-eye"></i></a>
-                                <a href="#" class="link-details" title="More Details"><i
-                                            class="ion ion-android-open"></i></a>
                             </figure>
 
                             <div class="portfolio-info">
-                                <h4><a href="#">Web 1</a></h4>
-                                <p>Web</p>
+                                <h4><a href="#">Escenario</a></h4>
+                                <p>Artistas Exclusivos</p>
                             </div>
                         </div>
                     </div>
@@ -389,11 +371,10 @@
 
                     <div class="col-lg-3 col-md-6 wow fadeInUp">
                         <div class="member">
-                            <img src="<?php echo e(asset('img/team-1.jpg')); ?>" class="img-fluid" alt="">
+                            <img src="<?php echo e(asset('img/zona1.png')); ?>" class="img-fluid" alt="">
                             <div class="member-info">
                                 <div class="member-info-content">
-                                    <h4>Walter White</h4>
-                                    <span>Chief Executive Officer</span>
+                                    <h4>Box 2 Personas</h4>
                                     <div class="social">
                                         <a href=""><i class="fa fa-twitter"></i></a>
                                         <a href=""><i class="fa fa-facebook"></i></a>
@@ -407,11 +388,10 @@
 
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="member">
-                            <img src="<?php echo e(asset('img/team-2.jpg')); ?>" class="img-fluid" alt="">
+                            <img src="<?php echo e(asset('img/zona2.jpg')); ?>" class="img-fluid" alt="">
                             <div class="member-info">
                                 <div class="member-info-content">
-                                    <h4>Sarah Jhonson</h4>
-                                    <span>Product Manager</span>
+                                    <h4>Box 4 Personas</h4>
                                     <div class="social">
                                         <a href=""><i class="fa fa-twitter"></i></a>
                                         <a href=""><i class="fa fa-facebook"></i></a>
@@ -425,11 +405,10 @@
 
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="member">
-                            <img src="<?php echo e(asset('img/team-3.jpg')); ?>" class="img-fluid" alt="">
+                            <img src="<?php echo e(asset('img/zona3.jpg')); ?>" class="img-fluid" alt="">
                             <div class="member-info">
                                 <div class="member-info-content">
-                                    <h4>William Anderson</h4>
-                                    <span>CTO</span>
+                                    <h4>Box 4 Personas</h4>
                                     <div class="social">
                                         <a href=""><i class="fa fa-twitter"></i></a>
                                         <a href=""><i class="fa fa-facebook"></i></a>
@@ -443,11 +422,10 @@
 
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="member">
-                            <img src="<?php echo e(asset('img/team-4.jpg')); ?>" class="img-fluid" alt="">
+                            <img src="<?php echo e(asset('img/zona4.jpg')); ?>" class="img-fluid" alt="">
                             <div class="member-info">
                                 <div class="member-info-content">
-                                    <h4>Amanda Jepson</h4>
-                                    <span>Accountant</span>
+                                    <h4>Box 6 Personas</h4>
                                     <div class="social">
                                         <a href=""><i class="fa fa-twitter"></i></a>
                                         <a href=""><i class="fa fa-facebook"></i></a>
