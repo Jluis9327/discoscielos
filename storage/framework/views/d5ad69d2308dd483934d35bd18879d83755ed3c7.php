@@ -8,12 +8,16 @@
             <center>
                 <div class="form-group">
                     <div class="col-sm-4">
-                    <select class="form-control" id="xs" onchange="javascript:handleSelect(this)">
-                        <option>Escoge una fecha</option>
-                        <?php for($i = 2; $i>=0 ; $i--): ?>
-                            <option value="<?php echo e(url('/recep/zone/firstlevel/'.$dni.'/day/'.$presentation[$i]->Date)); ?>"><?php echo e($presentation[$i]->Date); ?></option>
-                        <?php endfor; ?>
-                    </select>
+                        <select class="form-control" id="xs" onchange="javascript:handleSelect(this)">
+                            <option disabled>Escoge una fecha</option>
+                            <?php for($i = 2; $i>=0 ; $i--): ?>
+                                <?php if($presentation[$i]->Date==$date): ?>
+                                    <option value="<?php echo e(url('/recep/zone/firstlevel/'.$dni.'/day/'.$presentation[$i]->Date)); ?>" <?php echo e("selected"); ?>><?php echo e($presentation[$i]->Date); ?></option>
+                                <?php else: ?>
+                                    <option value="<?php echo e(url('/recep/zone/firstlevel/'.$dni.'/day/'.$presentation[$i]->Date)); ?>"><?php echo e($presentation[$i]->Date); ?></option>
+                                <?php endif; ?>
+                            <?php endfor; ?>
+                        </select>
                     </div>
                 </div>
                 <form class="form-horizontal" method="POST" action="<?php echo e(url('/recep/zone/firstlevel/reservation/')); ?>" enctype="multipart/form-data">

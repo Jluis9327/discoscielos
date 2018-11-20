@@ -114,7 +114,7 @@ class RecepController extends Controller
             }
         }
         $disponible=Onelevel_Presentation::where('Id_Pre','=',$idpresentacion)->get();
-        return view('recepcionist.first')->with(compact('dni','presentation','disponible'));
+        return view('recepcionist.first')->with(compact('dni','presentation','disponible','date'));
     }
     public function firstlevelReserva(Request $request){
         $dni=$request->dni;
