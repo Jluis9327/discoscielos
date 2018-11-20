@@ -20259,3 +20259,7 @@ Did you mean one of these?
   
 [2018-11-20 17:53:36] local.ERROR: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
  (SQL: SHOW FULL TABLES WHERE table_type = 'BASE TABLE')  
+[2018-11-20 21:05:33] local.ERROR: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+  
+[2018-11-20 21:05:34] local.ERROR: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+ (SQL: SHOW FULL TABLES WHERE table_type = 'BASE TABLE')  
