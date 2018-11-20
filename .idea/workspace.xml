@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4a0aa00e-8034-4edf-89ee-bd95e9d04c3b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
-    </list>
+    <list default="true" id="4a0aa00e-8034-4edf-89ee-bd95e9d04c3b" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +32,10 @@
         <counts>
           <entry key="css" value="1" />
           <entry key="html" value="1" />
+          <entry key="jpg" value="2" />
           <entry key="js" value="5" />
           <entry key="php" value="171" />
+          <entry key="png" value="2" />
           <entry key="pruebasdisco" value="1" />
         </counts>
       </usages-collector>
@@ -45,6 +44,7 @@
           <entry key="Blade" value="74" />
           <entry key="CSS" value="1" />
           <entry key="HTML" value="1" />
+          <entry key="Image" value="4" />
           <entry key="JavaScript" value="5" />
           <entry key="PHP" value="97" />
           <entry key="UNKNOWN" value="1" />
@@ -115,13 +115,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="184">
               <caret line="962" column="28" selection-start-line="962" selection-start-column="28" selection-end-line="962" selection-end-column="28" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/images/banner/5bf357866a658friday.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -281,7 +286,7 @@
       <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="713" />
     <option name="width" value="734" />
     <option name="height" value="867" />
@@ -317,6 +322,24 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
               <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="disco_laravel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="disco_laravel" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="disco_laravel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="disco_laravel" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="disco_laravel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="disco_laravel" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="banner" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="disco_laravel" type="b2602c69:ProjectViewProjectNode" />
@@ -410,12 +433,12 @@
       <workItem from="1542638576908" duration="25670000" />
       <workItem from="1542681058223" duration="8925000" />
       <workItem from="1542736319267" duration="2490000" />
-      <workItem from="1542747875833" duration="247000" />
+      <workItem from="1542747875833" duration="611000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="190569000" />
+    <option name="totallyTimeSpent" value="190933000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -457,26 +480,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Banner.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Box.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-276" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/factories/UserFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-138" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2018_11_13_051223_create_box__presentations_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-207" />
@@ -783,12 +786,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/banner/5bd87ec630f3cfriday.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/banner/5bc50841afd9b9f53ef2e-0e05-49fa-9248-a5b0cbbe0ccf.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="962" column="28" selection-start-line="962" selection-start-column="28" selection-end-line="962" selection-end-column="28" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/banner/5bd87f1ae521a3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/banner/5bf357866a658friday.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
 </project>
