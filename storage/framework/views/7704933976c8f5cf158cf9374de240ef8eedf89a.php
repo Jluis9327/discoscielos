@@ -23,17 +23,17 @@
                             ?>" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
                         </figure>
                         <div class="portfolio-info">
-                            <h4><a href="#">JUEVES - BANNER PRINCIPAL</a></h4>
+                            <h4><a href="#">JUEVES - BANNER PRIMARIO</a></h4>
                             <form method="post" style="" class="" action="<?php echo e(url('/admin/banner')); ?>" enctype="multipart/form-data">
                                 <?php echo e(csrf_field()); ?>
 
-                                <input type="file"  name="photo" style="color: transparent">
+                                <input type="file" class="form-control-file"  name="photo" style="color: transparent">
                                 <input type="hidden" name="Id" value="1">
                                 <input type="hidden" name="Tipo" value="Principal">
                                 <input type="hidden" name="Day" value="Jueves">
                                 <table>
                                     <tr>
-                                        <td><button type="submit" class="form-control">Subir Imagen </button></td>
+                                        <td><button type="submit" class="btn btn-secondary btn-sm">Subir Imagen </button></td>
                                         <td><input type="date" name="fecha" id="fecha" class="form-control" required></td>
                                     </tr>
                                 </table>
@@ -59,17 +59,17 @@
                             ?>" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
                         </figure>
                         <div class="portfolio-info">
-                            <h4><a href="#">VIERNES - BANNER PRINCIPAL</a></h4>
+                            <h4><a href="#">VIERNES - BANNER PRIMARIO</a></h4>
                             <form method="post" class="form-inline" action="<?php echo e(url('/admin/banner')); ?>" enctype="multipart/form-data">
                                 <?php echo e(csrf_field()); ?>
 
-                                <input type="file"  name="photo" style="color: transparent"/>
+                                <input type="file" class="form-control-file"  name="photo" style="color: transparent"/>
                                 <input type="hidden" name="Id" value="3">
                                 <input type="hidden" name="Tipo" value="Principal">
                                 <input type="hidden" name="Day" value="Viernes">
                                 <table>
                                     <tr>
-                                        <td><button type="submit" class="form-control">Subir Imagen </button></td>
+                                        <td><button type="submit" class="btn btn-secondary btn-sm">Subir Imagen </button></td>
                                         <td><input type="date" name="fecha" id="fecha" class="form-control" required></td>
                                     </tr>
                                 </table>
@@ -96,17 +96,17 @@
                         </figure>
 
                         <div class="portfolio-info">
-                            <h4><a href="#">SÁBADO - BANNER PRINCIPAL</a></h4>
+                            <h4><a href="#">SÁBADO - BANNER PRIMARIO</a></h4>
                             <form method="post" class="form-inline" action="<?php echo e(url('/admin/banner')); ?>" enctype="multipart/form-data">
                                 <?php echo e(csrf_field()); ?>
 
-                                <input type="file"  name="photo" style="color: transparent"/>
+                                <input type="file" name="photo" class="form-control-file" style="color: transparent"/>
                                 <input type="hidden" name="Id" value="5">
                                 <input type="hidden" name="Tipo" value="Principal">
                                 <input type="hidden" name="Day" value="Sabado">
                                 <table>
                                     <tr>
-                                        <td><button type="submit" class="form-control">Subir Imagen </button></td>
+                                        <td><button type="submit" class="btn btn-secondary btn-sm">Subir Imagen </button></td>
                                         <td><input type="date" name="fecha" id="fecha" class="form-control" required></td>
                                     </tr>
                                 </table>
@@ -137,7 +137,7 @@
                                 <?php echo e(csrf_field()); ?>
 
 
-                                <input type="file"  name="photo" style="color: transparent"/>
+                                <input type="file" class="form-control-file" name="photo" style="color: transparent"/>
                                 <input type="hidden" name="Id" value="2">
                                 <input type="hidden" name="Tipo" value="Secundario">
                                 <input type="hidden" name="Day" value="Jueves">
@@ -173,7 +173,7 @@
                             <form method="post" class="form-inline" action="<?php echo e(url('/admin/banner')); ?>" enctype="multipart/form-data">
                                 <?php echo e(csrf_field()); ?>
 
-                                <input type="file"  name="photo" style="color: transparent"/>
+                                <input type="file"class="form-control-file" name="photo" style="color: transparent"/>
                                 <input type="hidden" name="Id" value="4">
                                 <input type="hidden" name="Tipo" value="Secundario">
                                 <input type="hidden" name="Day" value="Viernes">
@@ -209,7 +209,7 @@
                             <form method="post" class="form-inline" action="<?php echo e(url('/admin/banner')); ?>    " enctype="multipart/form-data">
                                 <?php echo e(csrf_field()); ?>
 
-                                <input type="file"  name="photo" style="color: transparent"/>
+                                <input type="file" class="form-control-file" name="photo" style="color: transparent"/>
                                 <input type="hidden" name="Id" value="6">
                                 <input type="hidden" name="Tipo" value="Secundario">
                                 <input type="hidden" name="Day" value="Sabado">
