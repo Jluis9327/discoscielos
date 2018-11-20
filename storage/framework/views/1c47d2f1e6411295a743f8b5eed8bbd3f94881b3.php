@@ -2,9 +2,9 @@
     <section id="portfolio"  class="section-bg" >
         <div class="container">
             <div class="section-header">
-                <br><br><h3 style="color: white">REGISTRAR CLIENTE</h3>
+                <br><br><h3 style="color: white">REGISTRAR USUARIOS</h3>
             </div>
-            <form method="post" action="<?php echo e(url('/RECEP/register')); ?>" enctype="multipart/form-data" >
+            <form method="post" action="<?php echo e(url('/admin/register')); ?>" enctype="multipart/form-data" >
                 <?php echo e(csrf_field()); ?>
 
                 <center>

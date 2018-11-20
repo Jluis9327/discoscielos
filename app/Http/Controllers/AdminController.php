@@ -7,6 +7,9 @@ use Illuminate\Http\Request;
 use App\Banner;
 use App\User;
 use File;
+use App\Box;
+use App\Box_Presentation;
+use App\Onelevel_Presentation;
 class AdminController extends Controller
 {
     //
@@ -88,29 +91,51 @@ class AdminController extends Controller
     }
     public function up(Request $request)
     {
-        $file=$request->file('photo');
-        //dd($request->Prin);
-        if($file==null){
+        date_default_timezone_set('America/Lima');
+        $fechax = date('Y/m/d');
+        $fecha=$request->fecha;
+        if(isset($fecha)){
+            $dia=$request->Day;
+            $objpresentacion = new Presentation();
+            $objpresentacion->Name = $dia;
+            $objpresentacion->Date = $fecha;
+            $objpresentacion->save();
+            $boxes=Box::all();
+            $presentation1=Presentation::where('Name', $request->Day)->orderBy('Date', 'DESC')->take(1)->get();
+            foreach ($boxes as $item) {
+                $box_presentation=new  Box_Presentation();
+                $box_presentation->Id_Bo=$item->Id_Bo;
+                $box_presentation->Id_Pre=$presentation1[0]->Id_Pre;
+                $box_presentation->Id_Est=3;
+                $box_presentation->save();
+            }
+            $onelevel_presentation=new Onelevel_Presentation();
+            $onelevel_presentation->gauging=60;
+            $onelevel_presentation->quantity=0;
+            $onelevel_presentation->Date=$fechax;
+            $onelevel_presentation->Id_Pre=$presentation1[0]->Id_Pre;
+            $onelevel_presentation->save();
+        }
+        $file = $request->file('photo');
+        if ($file == null) {
             return back();
         }
-        $path=public_path().'/images/banner';
-        $fileName=uniqid().$file->getClientOriginalName();
-        $moved=$file->move($path,$fileName);
-        if($moved)
-        {
-            $banner=Banner::find($request->Id);
-            $deleted=File::delete($path."/".$banner->Route);
-            //dd($path."/".$banner->Route);
-            $banner->Route=$fileName;
-            $banner->Day=$request->Day;
-            $banner->Type=$request->Tipo;
-            $presentation=Presentation::where('Name',$request->Day)->orderBy('Date','DESC')->take(1)->get();
-            foreach ($presentation as $item)
-            {
-                $banner->Id_Pre=$item->Id_Pre;
+        $path = public_path() . '/images/banner';
+        $fileName = uniqid() . $file->getClientOriginalName();
+        $moved = $file->move($path, $fileName);
+        if ($moved) {
+            $banner = Banner::find($request->Id);
+            $deleted = File::delete($path . "/" . $banner->Route);
+            $banner->Route = $fileName;
+            $banner->Day = $request->Day;
+            $banner->Type = $request->Tipo;
+            $presentation = Presentation::where('Name', $request->Day)->orderBy('Date', 'DESC')->take(1)->get();
+            foreach ($presentation as $item) {
+                $banner->Id_Pre = $item->Id_Pre;
                 $banner->save();
             }
         }
         return back();
+
     }
 }

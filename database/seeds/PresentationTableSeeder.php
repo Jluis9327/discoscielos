@@ -15,15 +15,15 @@ class PresentationTableSeeder extends Seeder
         $fecha = date('Y/m/d');
         Presentation::create([
             'Name'=>'Jueves',
-            'Date'=>'2018/11/22'
+            'Date'=>'2018/11/15'
         ]);
         Presentation::create([
             'Name'=>'Viernes',
-            'Date'=>'2018/11/23'
+            'Date'=>'2018/11/16'
         ]);
         Presentation::create([
             'Name'=>'Sabado',
-            'Date'=>'2018/11/24'
+            'Date'=>'2018/11/17'
         ]);
     }
 }

@@ -59,9 +59,6 @@
                             INICIAR SESION
                         </button>
                         <br>
-                        <a class="btn btn-link" href="{{ route('password.request') }}">
-                            <font style="font-family: 'Arial Narrow'; ">¿Olvidaste Tu Contraseña?</font>
-                        </a>
                     </div>
                 </div>
             </form>

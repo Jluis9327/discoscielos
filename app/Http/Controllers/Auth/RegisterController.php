@@ -55,7 +55,7 @@ class RegisterController extends Controller
             'DNI'=>'required|integer|min:8|unique:users',
             'name' => 'required|string|max:255',
             'surname'=>'required|string|max:255',
-            'phone'=>'required|integer|min:9',
+            'phone'=>'required|integer|min:9|unique:users',
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:6|confirmed',
             //-----------RECIEN INCORPORADO----------------

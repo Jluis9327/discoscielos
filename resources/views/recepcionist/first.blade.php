@@ -9,12 +9,16 @@
             <center>
                 <div class="form-group">
                     <div class="col-sm-4">
-                    <select class="form-control" id="xs" onchange="javascript:handleSelect(this)">
-                        <option>Escoge una fecha</option>
-                        @for ($i = 2; $i>=0 ; $i--)
-                            <option value="{{url('/recep/zone/firstlevel/'.$dni.'/day/'.$presentation[$i]->Date)}}">{{ $presentation[$i]->Date}}</option>
-                        @endfor
-                    </select>
+                        <select class="form-control" id="xs" onchange="javascript:handleSelect(this)">
+                            <option disabled>Escoge una fecha</option>
+                            @for ($i = 2; $i>=0 ; $i--)
+                                @if ($presentation[$i]->Date==$date)
+                                    <option value="{{url('/recep/zone/secondlevel/'.$dni.'/day/'.$presentation[$i]->Date)}}" {{"selected"}}>{{ $presentation[$i]->Date}}</option>
+                                @else
+                                    <option value="{{url('/recep/zone/secondlevel/'.$dni.'/day/'.$presentation[$i]->Date)}}">{{ $presentation[$i]->Date}}</option>
+                                @endif
+                            @endfor
+                        </select>
                     </div>
                 </div>
                 <form class="form-horizontal" method="POST" action="{{url('/recep/zone/firstlevel/reservation/')}}" enctype="multipart/form-data">

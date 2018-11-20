@@ -58,9 +58,6 @@
                             INICIAR SESION
                         </button>
                         <br>
-                        <a class="btn btn-link" href="<?php echo e(route('password.request')); ?>">
-                            <font style="font-family: 'Arial Narrow'; ">¿Olvidaste Tu Contraseña?</font>
-                        </a>
                     </div>
                 </div>
             </form>
