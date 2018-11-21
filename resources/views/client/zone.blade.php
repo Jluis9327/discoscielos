@@ -7,9 +7,9 @@
                 <h3 style="color: white;">POR  FAVOR, ELIJA UNA UN NIVEL</h3>
             </header>
             <center>
-                <a href="{{url('/client/firstlevel')}}"><img src="../img/primernivel.jpg"></a>
+                <a href="{{url('/client/zone/firstlevel/'.Auth::user()->DNI.'/day/'.$date)}}"><img src="{{asset('img/primernivel.jpg')}}"></a>
                 &nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="{{url('/client/secondlevel')}}"><img src="../img/segundonivel.jpg"></a>
+                <a href="{{url('/client/zone/secondlevel/'.Auth::user()->DNI.'/day/'.$date)}}"><img src="{{asset('img/segundonivel.jpg')}}"></a>
             </center>
             <br>
             <center><a href="{{url('/client')}}"><i class="ion-ios-undo-outline" style="font-size: 350%"></i></a><h6 style="color: white; font-family: 'Arial Black'">MENU PRINCIPAL</h6></center>

@@ -86,8 +86,13 @@ class RegisterController extends Controller
     public function redirectPath()
     {
         if (auth()->user()->Id_Rol==3){
-            return $this->redirectTo='/';
-            //return $this->redirectTo='/client';
+            if(auth()->user()->Id_Est==1){
+                return $this->redirectTo='/client';
+            }
+            else{
+                Auth::logout();
+                return route('login');
+            }
         }
     }
 }

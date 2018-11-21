@@ -6,9 +6,9 @@
                 <h3 style="color: white;">POR  FAVOR, ELIJA UNA UN NIVEL</h3>
             </header>
             <center>
-                <a href="<?php echo e(url('/client/firstlevel')); ?>"><img src="../img/primernivel.jpg"></a>
+                <a href="<?php echo e(url('/client/zone/firstlevel/'.Auth::user()->DNI.'/day/'.$date)); ?>"><img src="<?php echo e(asset('img/primernivel.jpg')); ?>"></a>
                 &nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="<?php echo e(url('/client/secondlevel')); ?>"><img src="../img/segundonivel.jpg"></a>
+                <a href="<?php echo e(url('/client/zone/secondlevel/'.Auth::user()->DNI.'/day/'.$date)); ?>"><img src="<?php echo e(asset('img/segundonivel.jpg')); ?>"></a>
             </center>
             <br>
             <center><a href="<?php echo e(url('/client')); ?>"><i class="ion-ios-undo-outline" style="font-size: 350%"></i></a><h6 style="color: white; font-family: 'Arial Black'">MENU PRINCIPAL</h6></center>

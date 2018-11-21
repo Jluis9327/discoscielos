@@ -7,7 +7,8 @@
  */
 
 namespace App\Http\Controllers;
-
+use App\Presentation;
+use App\Box_Presentation;
 
 class ClientController
 {
@@ -40,14 +41,26 @@ class ClientController
     public function index(){
         return view('client.index');
     }
-    public function zone(){
-        return view('client.zone');
+    public function zoneindex(){
+        $presentation=Presentation::orderBy('Date','desc')->limit(3)->get();
+        $date=$presentation[2]->Date;
+        return view('client.zone')->with(compact('date'));
     }
-    public function first(){
+    public function firstindex(){
+
         return view('client.first');
     }
-    public function second(){
-        return view('client.second');
+    public function secondindex($dni,$date){
+        $presentation=Presentation::orderBy('Date','desc')->limit(3)->get();
+        foreach ($presentation as $item)
+        {
+            if($date==$item['Date'])
+            {
+                $fecha=$item['Id_Pre'];
+            }
+        }
+        $boxes=Box_Presentation::where('Id_Pre',$fecha)->get();
+        return view('client.second')->with(compact('dni','boxes','presentation','date'));
     }
 
 }

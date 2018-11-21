@@ -18,7 +18,7 @@
                             <img src="../img/boxrese.jpg" alt="" class="img-fluid">
                             <div class="icon"><i class="ion-ios-locked-outline"></i></div>
                         </div>
-                        <h2 class="title"><a href="<?php echo e(url('/client/zone')); ?>">Reservar Box</a></h2><br>
+                        <h2 class="title"><a href="<?php echo e(url('/client/zone/'.Auth::user()->DNI)); ?>">Reservar Box</a></h2><br>
                     </div>
                 </div>
 
